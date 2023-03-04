@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  /* border: 0.01rem solid grey; */
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.top-bar {
+  /* border: 0.01rem solid grey; */
+  /* background-color: orange; */
+  display: flex;
+  height: 5.75rem;
+  border-radius: 10rem;
+  padding: 1rem;
+  gap: 1rem;
+  box-shadow: 0.005rem 0.005rem 3rem 0.00001rem rgb(209, 209, 209);
+}
+
+.search-container {
+  /* flex-grow: 1; */
+  /* border: 0.01rem solid grey; */
+  display: flex;
+  justify-content: flex-start;
+  /* flex-grow: 1; */
+  width: 4rem;
+}
+
+.search {
+  background-color: inherit;
+  /* width: 100%; */
+  height: 100%;
+  align-self: flex-start;
+  /* border: 0.01rem solid grey; */
+}
+
+.search .icon {
+  width: 100%;
+  height: 100%;
+  min-width: 3.75rem;
+
+  /* margin: auto; */
+  /* border: 0.01rem solid grey; */
+}
+
+.top-bar-text {
+  margin: auto;
+  padding: 0;
+  margin: 0;
+  /* border: 0.01rem solid grey; */
+  line-height: 1.5;
+  flex-grow: 10;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.top-bar-text h4 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.top-bar-text p {
+  color: rgb(83, 83, 83);
+}
+
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  /* border: 0.01rem solid grey; */
+  /* background-color: aqua; */
+}
+
+.filter {
+  background-color: inherit;
+  height: 3.5rem;
+  width: 3.5rem;
+  /* margin: auto; */
+  /* display: flex;
+  justify-content: center; */
+  border: 0.01rem solid rgb(212, 212, 212);
+  border-radius: 2rem;
+}
+
+.filter .icon {
+  height: 55%;
+  width: 55%;
+  margin: 0.75rem;
+  /* margin: auto; */
+  /* border: 0.01rem solid grey; */
+}
+
+/* scroll bar stuff  */
+
+.scroll-bar {
+  display: inline-block;
+  height: 9rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  overflow: auto;
+  white-space: nowrap;
+  border: 0.01rem solid grey;
+}
+
+.scroll-bar > div {
+  display: inline-block;
+  width: 4rem;
+  height: 90%;
+  border: 0.01rem solid grey;
+  margin: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(83, 83, 83);
+}
+
+.scroll-bar > div .icon {
+  width: 3rem;
+  margin: auto;
+  border: 0.01rem solid grey;
+}
+
+/* width */
+header ::-webkit-scrollbar {
+  height: 0.5rem;
+  width: 100%;
+}
+
+/* header ::-webkit-scrollbar-button {
+}
+the buttons on the scrollbar (arrows pointing upwards and downwards). */
+
+/* Track */
+header ::-webkit-scrollbar-track {
+  border-radius: 1rem;
+}
+
+/* Handle */
+header ::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: black;
+  width: 10%;
+}
+
+/* ::-webkit-scrollbar the scrollbar.
+::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
+::-webkit-scrollbar-thumb the draggable scrolling handle.
+::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
+::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
+::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
+::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements. */
