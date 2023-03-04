@@ -109,41 +109,48 @@ div {
 
 .scroll-bar {
   display: inline-block;
-  height: 9rem;
+  height: 6.5rem;
   width: 100%;
   margin-top: 1.5rem;
   overflow: auto;
   white-space: nowrap;
-  border: 0.01rem solid grey;
+  /* border: 0.01rem solid grey; */
 }
 
 .scroll-bar > div {
   display: inline-block;
-  width: 4rem;
-  height: 90%;
-  border: 0.01rem solid grey;
-  margin: 0.25rem;
-  font-size: 1.25rem;
+  min-width: 7rem;
+  padding: 1rem;
+  height: 95%;
+  /* border: 0.01rem solid grey; */
+  /* margin: 0.25rem; */
+  font-size: 1.1rem;
   font-weight: 500;
   text-align: center;
-  color: rgb(83, 83, 83);
+  filter: opacity(60%);
 }
 
 .scroll-bar > div .icon {
-  width: 3rem;
+  width: 2.75rem;
+  height: 2.75rem;
   margin: auto;
-  border: 0.01rem solid grey;
+  margin-bottom: 0.5rem;
+
+  /* border: 0.01rem solid grey; */
 }
+
+.scroll-bar > div:hover {
+  filter: opacity(100%);
+  /* color: black; */
+}
+
+/* scrollbar only */
 
 /* width */
 header ::-webkit-scrollbar {
   height: 0.5rem;
   width: 100%;
 }
-
-/* header ::-webkit-scrollbar-button {
-}
-the buttons on the scrollbar (arrows pointing upwards and downwards). */
 
 /* Track */
 header ::-webkit-scrollbar-track {
@@ -154,13 +161,13 @@ header ::-webkit-scrollbar-track {
 header ::-webkit-scrollbar-thumb {
   border-radius: 1rem;
   background: black;
-  width: 10%;
+  -webkit-width: 1;
 }
 
-/* ::-webkit-scrollbar the scrollbar.
-::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
-::-webkit-scrollbar-thumb the draggable scrolling handle.
-::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
-::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
-::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
-::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements. */
+/* main body  */
+
+.grid-container {
+  display: grid;
+}
+
+/* footer  */
