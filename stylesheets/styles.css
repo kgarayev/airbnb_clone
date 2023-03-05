@@ -169,7 +169,7 @@ header ::-webkit-scrollbar-thumb {
 .grid-container {
   margin: 1.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
   grid-auto-flow: row;
   /* border: 0.01rem solid grey; */
   grid-gap: 3rem;
