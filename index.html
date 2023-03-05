@@ -14,6 +14,11 @@
 
     <link rel="stylesheet" href="./stylesheets/generic.css" />
     <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <link rel="stylesheet" href="./stylesheets/header.css" />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/footer.css" />
+    <link rel="stylesheet" href="./stylesheets/aside.css" />
+    <link rel="stylesheet" href="./stylesheets/filter-popup.css" />
 
     <title>Fake Airbnb</title>
   </head>
@@ -21,13 +26,15 @@
   <body>
     <div class="container">
       <header>
+
         <div class="top-bar">
+
           <div class="search-container">
             <div class="search">
               <a href="#">
                 <img
                   class="icon"
-                  src="./icons/magnifying_glass.png"
+                  src="./icons/magnifying.svg"
                   alt="magnifying_glass_icon"
               /></a>
             </div>
@@ -38,11 +45,403 @@
             <p>Any week <span>·</span> <span>Add guests</span></p>
           </div>
 
-          <div class="filter-container">
+          <div class="filter-container" tabindex="0">
             <div class="filter">
               <a href="#">
                 <img class="icon" src="./icons/filter.png" alt="filter_icon" />
               </a>
+
+              <div class="filter-popup">
+                <div class="filter-menu">
+                  <form>
+                    <div class="filter-heading">
+                      <h4>Filters</h4>
+                      <a href="#" tabindex="0">
+                        <img
+                          class="icon"
+                          src="./icons/close.svg"
+                      /></a>
+                    </div>
+
+                    <div class="price">
+                      <h3>Price range</h3>
+                      <p>The average nightly price is £181</p>
+                      <div class="range">
+                        <div class="price-box">
+                          <div>min price</div>
+                          <div class="input-area">
+                            <div>£</div>
+
+                            <input
+                              type="number"
+                              id="minval"
+                              name="minval"
+                              value="8"
+                              min="8"
+                              max="973"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="divider">-</div>
+
+                        <div class="price-box">
+                          <div>min price</div>
+                          <div class="input-area">
+                            <div>£</div>
+
+                            <input
+                              type="number"
+                              id="maxval"
+                              name="maxval"
+                              value="973"
+                              min="8"
+                              max="973"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="place-type">
+                      <h3>Type of place</h3>
+                      <div class="place-type-option">
+                        <label for="entire"
+                          ><h5>Entire place</h5>
+                          <p>A place all to yourself</p></label
+                        >
+                        <input type="checkbox" id="entire" name="entire" />
+                      </div>
+
+                      <div class="place-type-option">
+                        <label for="private"
+                          ><h5>Private room</h5>
+                          <p>
+                            Your own room in a home or a hotel, plus some shared
+                            common spaces
+                          </p></label
+                        >
+                        <input type="checkbox" id="private" name="private" />
+                      </div>
+
+                      <div class="place-type-option">
+                        <label for="entire"
+                          ><h5>Shared room</h5>
+                          <p>
+                            A sleeping space and common areas that may be shared
+                            with others
+                          </p></label
+                        >
+                        <input type="checkbox" id="entire" name="entire" />
+                      </div>
+                    </div>
+
+                    <div class="rooms">
+                      <h3>Rooms and beds</h3>
+                      <div>
+                        <h5>Bedrooms</h5>
+                        <div class="scroll-bar" tabindex="0">
+                          <div class="number">
+                            <a class="scroll-icon" href="#">Any</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">1</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">2</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">3</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">4</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">5</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">6</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">7</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">8</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">9</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">10</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h5>Beds</h5>
+                        <div class="scroll-bar" tabindex="0">
+                          <div class="number">
+                            <a class="scroll-icon" href="#">Any</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">1</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">2</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">3</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">4</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">5</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">6</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">7</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">8</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">9</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">10</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h5>Bathrooms</h5>
+                        <div class="scroll-bar" tabindex="0">
+                          <div class="number">
+                            <a class="scroll-icon" href="#">Any</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">1</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">2</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">3</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">4</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">5</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">6</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">7</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">8</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">9</a>
+                          </div>
+
+                          <div class="number">
+                            <a class="scroll-icon" href="#">10</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="property">
+                      <h3>Property type</h3>
+                      <div class="property-grid">
+                        <div class="property-item">House</div>
+                        <div class="property-item">Flat</div>
+                        <div class="property-item">Guest house</div>
+                        <div class="property-item">Hotel</div>
+                      </div>
+                    </div>
+
+                    <div class="amenities">
+                      <h3>Amenities</h3>
+                      <h4>Essentials</h4>
+                      <div>
+                        <label for="wifi"><h5>Wifi</h5> </label>
+                        <input type="checkbox" id="wifi" name="wifi" />
+                      </div>
+
+                      <div>
+                        <label for="wifi"><h5>Wifi</h5> </label>
+                        <input type="checkbox" id="wifi" name="wifi" />
+                      </div>
+
+                      <div>
+                        <label for="wifi"><h5>Wifi</h5> </label>
+                        <input type="checkbox" id="wifi" name="wifi" />
+                      </div>
+
+                      <div>
+                        <label for="wifi"><h5>Wifi</h5> </label>
+                        <input type="checkbox" id="wifi" name="wifi" />
+                      </div>
+
+                      <div>
+                        <label for="wifi"><h5>Wifi</h5> </label>
+                        <input type="checkbox" id="wifi" name="wifi" />
+                      </div>
+
+                      <a href="#">Show more</a>
+                    </div>
+
+                    <div class="booking-options">
+                      <h3>Booking options</h3>
+                      <div class="switch">
+                        <label for="toggle">
+                          <h5>Instant Book</h5>
+                          <p>
+                            Listings you can book without waiting for host
+                            approval
+                          </p>
+                        </label>
+
+                        <input
+                          class="toggle"
+                          type="checkbox"
+                          id="toggle"
+                          name="toggle"
+                        />
+                        <label class="toggle-switch" for="toggle"></label>
+                      </div>
+
+                      <div class="switch">
+                        <label for="toggle">
+                          <h5>Instant Book</h5>
+                          <p>
+                            Listings you can book without waiting for host
+                            approval
+                          </p>
+                        </label>
+
+                        <input
+                          class="toggle"
+                          type="checkbox"
+                          id="toggle"
+                          name="toggle"
+                        />
+                        <label class="toggle-switch" for="toggle"></label>
+                      </div>
+                    </div>
+
+                    <div class="accessibility">
+                      <h3>Accessibility features</h3>
+
+                      <h4>Guest entrance and parking</h4>
+                      <div>
+                        <label for="entrance"
+                          ><h5>Step-free guest entrance</h5>
+                        </label>
+                        <input type="checkbox" id="entrance" name="entrance" />
+                      </div>
+
+                      <div>
+                        <label for="entrance"
+                          ><h5>Step-free guest entrance</h5>
+                        </label>
+                        <input type="checkbox" id="entrance" name="entrance" />
+                      </div>
+
+                      <div>
+                        <label for="entrance"
+                          ><h5>Step-free guest entrance</h5>
+                        </label>
+                        <input type="checkbox" id="entrance" name="entrance" />
+                      </div>
+
+                      <a href="#">Show more</a>
+                    </div>
+
+                    <div class="top-tier">
+                      <h3>Top-tier stays</h3>
+                      <div>
+                        <label for="superhost"
+                          ><h5>Superhost</h5>
+                          <p>Stay with recognised hosts</p></label
+                        >
+                        <input
+                          type="checkbox"
+                          id="superhost"
+                          name="superhost"
+                        />
+                      </div>
+
+                      <div>
+                        <label for="plus"
+                          ><h5>Airbnb Plus</h5>
+                          <p>Every Plus home is reviewed for quality</p></label
+                        >
+                        <input type="checkbox" id="plus" name="plus" />
+                      </div>
+                    </div>
+
+                    <div class="language">
+                      <h3>Host language</h3>
+                      <div>
+                        <label for="eng"><h5>English</h5> </label>
+                        <input type="checkbox" id="eng" name="eng" />
+                      </div>
+
+                      <div>
+                        <label for="fre"><h5>French</h5> </label>
+                        <input type="checkbox" id="fre" name="fre" />
+                      </div>
+
+                      <div>
+                        <label for="ger"><h5>German</h5> </label>
+                        <input type="checkbox" id="ger" name="ger" />
+                      </div>
+
+                      <a href="#">Show more</a>
+                    </div>
+
+                    <div class="filter-footer">
+                      <div><a href="#">Clear all</a></div>
+                      <div class="more-box"><a href="#">Show 978 homes</a></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -295,537 +694,715 @@
       </header>
 
       <main>
+        <div>
         <div class="grid-container">
           <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/luxury_suite.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/luxury_suite.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
           </div>
 
           <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/castle.jpg" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/countryside.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
                 </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/castle.jpg" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
               </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/cave.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
               </div>
-            </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/barn.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/boat.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/cool.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/crane.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/dome.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/farm.jpeg" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/glamping.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/house1.jpg" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/mansion.jpg" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/pod.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/mansion.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/pod2.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
+          </div>
+
+
+          <div class="listing">
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/mansion2.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
+                </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
           </div>
 
           <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/cave.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/pool.jpeg" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
           </div>
 
           <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/countryside.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/ski.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
           </div>
 
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/crane.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
+
 
           <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/dome.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/treepod.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
           </div>
 
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/farm.jpeg" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
 
           <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/glamping.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/views.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
           </div>
 
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/house1.jpg" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
+
 
           <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/house2.jpeg" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/z1.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
           </div>
 
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/mansion.jpg" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
+
 
           <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/barn.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/z2.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
+                </div>
+              </div></a
+            >
           </div>
 
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/boat.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
+
 
           <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/mansion.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
+            <a href="#">
+              <div class="picture-container">
+                <img class="picture" src="./images/z3.webp" />
+                <img
+                  class="listing-icon"
+                  tabindex="0"
+                  src="./icons/heart2.png"
+                />
+              </div>
+              <div class="listing-text">
+                <div class="listing-summary">
+                  <h5 class="location">Harlingen, Netherlands</h5>
+                  <div class="rating">
+                    <img class="star-icon" src="./icons/star.svg" /><span
+                      >4.99</span
+                    >
+                  </div>
                 </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/mansion2.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
+                <div class="listing-details">
+                  <p>Professional Host</p>
+                  <p>2-7 Apr</p>
+                  <p>£1,790 total</p>
                 </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/pod.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/pod2.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/pool.jpeg" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/ski.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/treepod.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/views.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/z1.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/z2.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="listing">
-            <div class="picture-container">
-              <img class="picture" src="./images/z3.webp" />
-              <img class="listing-icon" tabindex="0" src="./icons/heart2.png" />
-            </div>
-            <div class="listing-text">
-              <div class="listing-summary">
-                <h5 class="location">Harlingen, Netherlands</h5>
-                <div class="rating">
-                  <img class="star-icon" src="./icons/star.svg" /><span
-                    >4.99</span
-                  >
-                </div>
-              </div>
-              <div class="listing-details">
-                <p>Professional Host</p>
-                <p>2-7 Apr</p>
-                <p>£1,790 total</p>
-              </div>
-            </div>
+              </div></a
+            >
           </div>
         </div>
-
-        <div class="line"></div>
 
         <div class="show-more">
           <a href="#"><button tabindex="0">Show more</button></a>
@@ -998,19 +1575,19 @@
         </div>
 
         <div class="mini-nav">
-          <div class="nav-item">
+          <div class="nav-item" tabindex="0">
             <a href="#">
               <img class="nav-icon" src="./icons/magnifying_glass5.png" />
               <p>Explore</p>
             </a>
           </div>
-          <div class="nav-item">
+          <div class="nav-item" tabindex="0">
             <a href="#">
               <img class="nav-icon" src="./icons/heart4.png" />
               <p>Wishlists</p>
             </a>
           </div>
-          <div class="nav-item">
+          <div class="nav-item" tabindex="0">
             <a href="#">
               <img class="nav-icon" src="./icons/login2.png" />
               <p>Log in</p>

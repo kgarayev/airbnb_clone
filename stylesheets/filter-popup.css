@@ -1,0 +1,234 @@
+/* filter popup  */
+
+.filter-popup {
+  display: none;
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 0.01rem solid #a3a3a3;
+  background-color: rgb(104, 104, 104);
+}
+
+.filter-container:focus-within .filter-popup {
+  display: initial;
+}
+
+.filter-container:focus-within aside {
+  display: none;
+}
+
+.filter-menu {
+  z-index: 3;
+  position: fixed;
+  top: 1.5rem;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 0.01rem solid #a3a3a3;
+  background-color: white;
+  border-radius: 2rem;
+  overflow: auto;
+  overflow-y: auto;
+}
+
+form > div {
+  border-bottom: 0.01rem solid #dfdfdf;
+  width: 85%;
+  margin: auto;
+}
+
+.filter-heading {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  /* border-bottom: 0.01rem solid #dfdfdf; */
+}
+
+.filter-heading a {
+  /* border: 0.01rem solid #a3a3a3; */
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 1.75rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 3;
+  border-radius: 5rem;
+  padding: 0.85rem;
+}
+
+.filter-heading a:hover,
+.filter-heading a:focus-within,
+.filter-heading a:active {
+  background-color: #f3f3f3;
+}
+
+.filter-heading a:focus-within .filter-popup,
+.filter-heading a:active .filter-popup {
+  display: none;
+  z-index: 0;
+}
+
+.filter-heading .icon {
+  /* border: 0.01rem solid #a3a3a3; */
+  height: 1.25rem;
+  width: 1.25rem;
+  margin: auto;
+}
+
+.filter-heading h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.range {
+  display: flex;
+  justify-content: center;
+  border: 0.01rem solid #a3a3a3;
+}
+
+.divider {
+  height: inherit;
+  width: 4rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  border: 0.01rem solid #a3a3a3;
+}
+
+.price-box {
+  min-width: 50px;
+  width: 350px;
+  /* max-width: 500px; */
+  height: 6rem;
+  border: 0.01rem solid #a3a3a3;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+}
+
+.place-type-option {
+  display: flex;
+  border: 0.01rem solid #a3a3a3;
+}
+
+input {
+  border: 0.01rem solid #a3a3a3;
+}
+
+label {
+  border: 0.01rem solid #a3a3a3;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.property-item {
+  border: 0.01rem solid #a3a3a3;
+}
+
+.amenities div {
+  display: flex;
+}
+
+.booking-options div {
+  /* display: flex; */
+  justify-content: space-between;
+  border: 0.01rem solid #a3a3a3;
+}
+
+.accessibility div {
+  display: flex;
+}
+
+.top-tier div {
+  display: flex;
+}
+
+.language {
+  margin-bottom: 12rem;
+  border-bottom: none;
+}
+
+.language div {
+  display: flex;
+}
+
+.filter-footer {
+  width: 100%;
+  height: 8rem;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border: 0.01rem solid #a3a3a3;
+  z-index: 5;
+}
+
+.more-box {
+  border: 0.01rem solid #a3a3a3;
+}
+
+/* toggle switch stuff  */
+
+.switch {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch {
+  z-index: 4;
+  /* display: block; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  height: 3.25rem;
+  background-color: #ccc;
+  border-radius: 10rem;
+  transition: background-color 0.3s ease;
+}
+
+.toggle:checked + .toggle-switch {
+  background-color: #242424;
+}
+
+.toggle-switch::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.15rem;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 2.85rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.toggle:checked + .toggle-switch::before {
+  transform: translate(1.5rem, -50%);
+}
