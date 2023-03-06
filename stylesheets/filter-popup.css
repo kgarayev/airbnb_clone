@@ -125,9 +125,9 @@ input {
   border: 0.01rem solid #a3a3a3;
 }
 
-label {
+/* label {
   border: 0.01rem solid #a3a3a3;
-}
+} */
 
 .property-grid {
   display: grid;
