@@ -97,9 +97,9 @@ header {
 
 .scroll-bar {
   display: inline-block;
-  height: 6.5rem;
+  height: 5.75rem;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 0.75rem;
   overflow: auto;
   white-space: nowrap;
   /* border: 0.01rem solid grey; */
@@ -107,7 +107,7 @@ header {
 
 .scroll-bar > div {
   display: inline-block;
-  min-width: 6.25rem;
+  min-width: 6rem;
   padding: 0.5rem;
   height: 90%;
   /* border: 0.01rem solid grey; */
@@ -119,8 +119,8 @@ header {
 }
 
 .scroll-bar > div .icon {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2rem;
+  height: 2rem;
   margin: auto;
   margin-bottom: 0.5rem;
 

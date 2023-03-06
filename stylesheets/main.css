@@ -147,3 +147,33 @@ main ::-webkit-scrollbar-thumb {
   background: black;
   -webkit-width: 1;
 }
+
+@media screen and (min-width: 375px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
