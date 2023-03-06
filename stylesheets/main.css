@@ -4,34 +4,59 @@
   margin: 1.5rem;
   display: grid;
   /* flex-wrap: wrap; */
-  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-auto-flow: row;
-  /* border: 0.01rem solid grey; */
+  border: 0.01rem solid grey;
   gap: 3rem;
   height: 100%;
 }
 
 .listing {
-  /* border: 0.01rem solid grey; */
-  min-width: 100px;
-  aspect-ratio: 16/20;
+  border: 0.01rem solid grey;
+  /* min-width: 100px; */
+  /* width: 40vw;
+  height: 40vw; */
+  aspect-ratio: 4/5;
+  width: 100%;
+  /* padding-top: 80%; */
   border-radius: 1.25rem;
 }
 
 .picture-container {
   width: 100%;
-  aspect-ratio: 1/1;
-  /* border: 0.01rem solid grey; */
+  /* height: 0; */
+  padding-bottom: 100%;
   border-radius: 1.25rem;
   position: relative;
+  overflow: hidden;
+  /* aspect-ratio: 1/1; */
+  /* padding-top: 100%; */
+  /* width: 18vw;
+  height: 18vw; */
+  /* border: 0.01rem solid grey; */
 }
 
 .picture {
-  aspect-ratio: 1/1;
-  /* width: 100%; */
-  /* height: 100%; */
-  object-fit: cover;
-  border-radius: 1.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* aspect-ratio: 1/1; */
+  /* clip-path: inset(0);
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  object-position: center;
+  object-fit: cover; */
+  /* border-radius: 1.25rem;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 1.25rem; */
 }
 
 .listing-icon {
