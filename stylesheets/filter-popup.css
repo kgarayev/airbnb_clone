@@ -174,18 +174,18 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .place-type-option {
   display: flex;
-  border: 0.01rem solid #a3a3a3;
+  /* border: 0.01rem solid #a3a3a3; */
   margin-top: 1.25rem;
   justify-content: space-between;
 }
 
 .place-text {
   width: 80%;
-  border: 0.01rem solid rgb(158, 158, 158);
+  /* border: 0.01rem solid rgb(158, 158, 158); */
 }
 
 .checkbox-container {
-  border: 0.01rem solid rgb(158, 158, 158);
+  /* border: 0.01rem solid rgb(158, 158, 158); */
   width: 15%;
   display: flex;
 }
@@ -194,7 +194,7 @@ input[type="checkbox"] {
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
-  border: 1px solid rgb(112, 112, 112);
+  /* border: 1px solid rgb(112, 112, 112); */
   margin-left: auto;
 }
 
