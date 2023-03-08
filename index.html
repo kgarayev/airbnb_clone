@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./stylesheets/footer.css" />
     <link rel="stylesheet" href="./stylesheets/aside.css" />
     <link rel="stylesheet" href="./stylesheets/filter-popup.css" />
+    <link rel="stylesheet" href="./stylesheets/filter-popup-new.css" />
 
     <title>Fake Airbnb</title>
   </head>
@@ -67,7 +68,7 @@
                       <p>The average nightly price is £181</p>
                       <div class="range">
                         <div class="price-box">
-                          <div>min price</div>
+                          <div class="price-text">min price</div>
                           <div class="input-area">
                             <div>£</div>
 
@@ -85,7 +86,7 @@
                         <div class="divider">-</div>
 
                         <div class="price-box">
-                          <div>min price</div>
+                          <div class="price-text">max price</div>
                           <div class="input-area">
                             <div>£</div>
 
@@ -105,39 +106,54 @@
                     <div class="place-type">
                       <h3>Type of place</h3>
                       <div class="place-type-option">
-                        <div>
+                        <div class="place-text">
                           <h5>Entire place</h5>
                           <p>A place all to yourself</p>
                         </div>
-                        <input type="checkbox" id="entire" name="entire" />
+                        <div class="checkbox-container">
+                          <input
+                            class="checkbox"
+                            type="checkbox"
+                            id="entire"
+                            name="entire"
+                          />
+                        </div>
                       </div>
 
                       <div class="place-type-option">
-                        <div>
-                          <h5>Private room</h5>
-                          <p>
-                            Your own room in a home or a hotel, plus some shared
-                            common spaces
-                          </p>
+                        <div class="place-text">
+                          <h5>Entire place</h5>
+                          <p>A place all to yourself</p>
                         </div>
-                        <input type="checkbox" id="private" name="private" />
+                        <div class="checkbox-container">
+                          <input
+                            class="checkbox"
+                            type="checkbox"
+                            id="entire"
+                            name="entire"
+                          />
+                        </div>
                       </div>
 
                       <div class="place-type-option">
-                        <div>
-                          <h5>Shared room</h5>
-                          <p>
-                            A sleeping space and common areas that may be shared
-                            with others
-                          </p>
+                        <div class="place-text">
+                          <h5>Entire place</h5>
+                          <p>A place all to yourself</p>
                         </div>
-                        <input type="checkbox" id="shared" name="shared" />
+                        <div class="checkbox-container">
+                          <input
+                            class="checkbox"
+                            type="checkbox"
+                            id="entire"
+                            name="entire"
+                          />
+                        </div>
                       </div>
                     </div>
 
                     <div class="rooms">
                       <h3>Rooms and beds</h3>
-                      <div>
+                      <div class="space">
                         <h5>Bedrooms</h5>
                         <div class="scroll-bar" tabindex="0">
                           <div class="number">
@@ -151,62 +167,107 @@
                           </div>
 
                           <div class="number">
-                            <input type="radio" id="1" name="room" value="1" />
-                            <label for="1">1</label>
-                          </div>
-
-                          <div class="number">
-                            <input type="radio" id="2" name="room" value="2" />
-                            <label for="2">2</label>
-                          </div>
-
-                          <div class="number">
-                            <input type="radio" id="3" name="room" value="3" />
-                            <label for="3">3</label>
-                          </div>
-
-                          <div class="number">
-                            <input type="radio" id="4" name="room" value="4" />
-                            <label for="4">4</label>
-                          </div>
-
-                          <div class="number">
-                            <input type="radio" id="5" name="room" value="5" />
-                            <label for="5">5</label>
-                          </div>
-
-                          <div class="number">
-                            <input type="radio" id="6" name="room" value="6" />
-                            <label for="6">6</label>
-                          </div>
-
-                          <div class="number">
-                            <input type="radio" id="7" name="room" value="7" />
-                            <label for="7">7</label>
-                          </div>
-
-                          <div class="number">
-                            <input type="radio" id="8" name="room" value="8" />
-                            <label for="8">8</label>
-                          </div>
-
-                          <div class="number">
-                            <input type="radio" id="9" name="room" value="9" />
-                            <label for="9">9</label>
+                            <input
+                              type="radio"
+                              id="one"
+                              name="room"
+                              value="1"
+                            />
+                            <label for="one">1</label>
                           </div>
 
                           <div class="number">
                             <input
                               type="radio"
-                              id="10"
+                              id="two"
+                              name="room"
+                              value="2"
+                            />
+                            <label for="two">2</label>
+                          </div>
+
+                          <div class="number">
+                            <input
+                              type="radio"
+                              id="three"
+                              name="room"
+                              value="3"
+                            />
+                            <label for="three">3</label>
+                          </div>
+
+                          <div class="number">
+                            <input
+                              type="radio"
+                              id="four"
+                              name="room"
+                              value="4"
+                            />
+                            <label for="four">4</label>
+                          </div>
+
+                          <div class="number">
+                            <input
+                              type="radio"
+                              id="five"
+                              name="room"
+                              value="5"
+                            />
+                            <label for="five">5</label>
+                          </div>
+
+                          <div class="number">
+                            <input
+                              type="radio"
+                              id="six"
+                              name="room"
+                              value="6"
+                            />
+                            <label for="six">6</label>
+                          </div>
+
+                          <div class="number">
+                            <input
+                              type="radio"
+                              id="seven"
+                              name="room"
+                              value="7"
+                            />
+                            <label for="seven">7</label>
+                          </div>
+
+                          <div class="number">
+                            <input
+                              type="radio"
+                              id="eight"
+                              name="room"
+                              value="8"
+                            />
+                            <label for="eight">8</label>
+                          </div>
+
+                          <div class="number">
+                            <input
+                              type="radio"
+                              id="nine"
+                              name="room"
+                              value="9"
+                            />
+                            <label for="nine">9</label>
+                          </div>
+
+                          <div class="number">
+                            <input
+                              type="radio"
+                              id="ten"
                               name="room"
                               value="10"
                             />
-                            <label for="10">10</label>
+                            <label for="ten">10</label>
                           </div>
                         </div>
                       </div>
-                      <div>
+                      <div class="space">
                         <h5>Beds</h5>
                         <div class="scroll-bar" tabindex="0">
                           <div class="number">
@@ -320,7 +381,7 @@
                           </div>
                         </div>
                       </div>
-                      <div>
+                      <div class="space">
                         <h5>Bathrooms</h5>
                         <div class="scroll-bar" tabindex="0">
                           <div class="number">
@@ -340,7 +401,7 @@
                               name="bath"
                               value="1"
                             />
-                            <label for="bath-any">1</label>
+                            <label for="bath-1">1</label>
                           </div>
 
                           <div class="number">
