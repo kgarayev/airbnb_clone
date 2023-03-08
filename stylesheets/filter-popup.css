@@ -1,7 +1,7 @@
 /* filter popup  */
 
 .filter-popup {
-  /* display: none; */
+  display: none;
   z-index: 4;
   position: fixed;
   top: 0;
