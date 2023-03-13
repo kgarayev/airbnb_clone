@@ -147,7 +147,7 @@ form > div {
   min-width: 50px;
   width: 350px;
   /* max-width: 500px; */
-  height: 6rem;
+  height: 6.25rem;
   border: 0.01rem solid rgb(158, 158, 158);
   border-radius: 1rem;
   background-color: white;
@@ -167,6 +167,8 @@ form > div {
 .input-area {
   display: flex;
   align-items: center;
+  height: 2.25rem;
+  /* border: 0.01rem solid rgb(158, 158, 158); */
 }
 
 .input-area input {
@@ -333,7 +335,7 @@ input[type="radio"]:checked + label {
 }
 
 .property-checkbox:checked + label {
-  border: 0.1rem solid rgb(230, 230, 230);
+  border: 0.2rem solid rgb(0, 0, 0);
   cursor: pointer;
   background-color: #f8f8f8;
 }
@@ -441,7 +443,11 @@ input[type="radio"]:checked + label {
   height: 3.25rem;
   background-color: #ccc;
   border-radius: 10rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.1s ease;
+}
+
+.toggle-switch:hover {
+  cursor: pointer;
 }
 
 .toggle:checked + .toggle-switch {
