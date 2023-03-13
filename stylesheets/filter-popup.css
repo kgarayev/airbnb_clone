@@ -7,7 +7,7 @@
 .filter-popup {
   margin: auto;
   /* display: none; */
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
   display: flex;
   justify-content: center;
   z-index: 4;
@@ -17,7 +17,7 @@
   height: 100%;
   width: 100%;
   border: 0.01rem solid #a3a3a3;
-  background-color: rgb(104, 104, 104, 30%);
+  background-color: rgba(85, 85, 85, 0.75);
   /* filter: opacity(90%); */
 }
 
@@ -40,7 +40,7 @@
   /* top: 20%; */
   /* left: 50%; */
   max-width: 800px;
-  margin-top: 2.5%;
+  margin-top: 2%;
   z-index: 3;
   /* position: fixed; */
   top: 1.5rem;
@@ -611,4 +611,21 @@ input[type="radio"]:checked + label {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media screen and (min-width: 700px) {
+  .filter-menu {
+    height: 85%;
+  }
+
+  .filter-footer {
+    position: fixed;
+    bottom: 6%;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  .language {
+    margin-bottom: 8rem;
+  }
 }
