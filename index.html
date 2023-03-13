@@ -123,34 +123,42 @@
 
                       <div class="place-type-option">
                         <div class="place-text">
-                          <h5>Entire place</h5>
-                          <p>A place all to yourself</p>
+                          <h5>Private room</h5>
+                          <p>
+                            Your own room in a home or a hotel, plus some shared
+                            common spaces
+                          </p>
                         </div>
                         <div class="checkbox-container">
                           <input
                             class="checkbox"
                             type="checkbox"
-                            id="entire"
-                            name="entire"
+                            id="private"
+                            name="private"
                           />
                         </div>
                       </div>
 
                       <div class="place-type-option">
                         <div class="place-text">
-                          <h5>Entire place</h5>
-                          <p>A place all to yourself</p>
+                          <h5>Shared room</h5>
+                          <p>
+                            A sleeping space and common areas that may be shared
+                            with others
+                          </p>
                         </div>
                         <div class="checkbox-container">
                           <input
                             class="checkbox"
                             type="checkbox"
-                            id="entire"
-                            name="entire"
+                            id="shared"
+                            name="shared"
                           />
                         </div>
                       </div>
                     </div>
+
+                    <!-- rooms and beds  -->
 
                     <div class="rooms">
                       <h3>Rooms and beds</h3>
@@ -498,74 +506,144 @@
                       </div>
                     </div>
 
+                    <!-- property stuff  -->
+
                     <div class="property">
                       <h3>Property type</h3>
                       <div class="property-grid">
-                        <div class="property-item">House</div>
-                        <div class="property-item">Flat</div>
-                        <div class="property-item">Guest house</div>
-                        <div class="property-item">Hotel</div>
+                        <div class="property-item">
+                          <input
+                            class="property-checkbox"
+                            type="checkbox"
+                            id="house"
+                            name="house"
+                            value="house"
+                          />
+                          <label for="house"
+                            ><img src="./icons/house.svg" alt="house-icon" />
+                            <p>House</p></label
+                          >
+                        </div>
+
+                        <div class="property-item">
+                          <input
+                            class="property-checkbox"
+                            type="checkbox"
+                            id="flat"
+                            name="flat"
+                            value="flat"
+                          />
+                          <label for="flat"
+                            ><img src="./icons/flat.svg" alt="flat-icon" />
+                            <p>Flat</p></label
+                          >
+                        </div>
+                        <div class="property-item">
+                          <input
+                            class="property-checkbox"
+                            type="checkbox"
+                            id="guesthouse"
+                            name="guesthouse"
+                            value="guesthouse"
+                          />
+                          <label for="guesthouse"
+                            ><img
+                              src="./icons/guesthouse.svg"
+                              alt="guesthouse-icon"
+                            />
+                            <p>Guest house</p></label
+                          >
+                        </div>
+                        <div class="property-item">
+                          <input
+                            class="property-checkbox"
+                            type="checkbox"
+                            id="hotel"
+                            name="hotel"
+                            value="hotel"
+                          />
+                          <label for="hotel"
+                            ><img src="./icons/hotel.svg" alt="hotel-icon" />
+                            <p>Hotel</p></label
+                          >
+                        </div>
                       </div>
                     </div>
 
-                    <div class="amenities">
+                    <!-- amenities  -->
+
+                    <div class="amenities" id="amenities">
                       <h3>Amenities</h3>
                       <h4>Essentials</h4>
                       <div>
-                        <div><h5>Wifi</h5></div>
-                        <input type="checkbox" id="wifi" name="wifi" />
+                        <div class="amenities-text"><h5>Wifi</h5></div>
+                        <div class="checkbox-container">
+                          <input type="checkbox" id="wifi" name="wifi" />
+                        </div>
                       </div>
 
                       <div>
-                        <div><h5>Wifi</h5></div>
-                        <input type="checkbox" id="wifi" name="wifi" />
+                        <div class="amenities-text"><h5>Kitchen</h5></div>
+                        <div class="checkbox-container">
+                          <input type="checkbox" id="kitchen" name="kitchen" />
+                        </div>
                       </div>
 
                       <div>
-                        <div><h5>Wifi</h5></div>
-                        <input type="checkbox" id="wifi" name="wifi" />
+                        <div class="amenities-text">
+                          <h5>Washing machine</h5>
+                        </div>
+                        <div class="checkbox-container">
+                          <input type="checkbox" id="washing" name="washing" />
+                        </div>
                       </div>
 
                       <div>
-                        <div><h5>Wifi</h5></div>
-                        <input type="checkbox" id="wifi" name="wifi" />
+                        <div class="amenities-text"><h5>Dryer</h5></div>
+                        <div class="checkbox-container">
+                          <input type="checkbox" id="dryer" name="dryer" />
+                        </div>
                       </div>
 
                       <div>
-                        <div><h5>Wifi</h5></div>
-                        <input type="checkbox" id="wifi" name="wifi" />
+                        <div class="amenities-text">
+                          <h5>Air conditioning</h5>
+                        </div>
+                        <div class="checkbox-container">
+                          <input type="checkbox" id="air" name="air" />
+                        </div>
                       </div>
 
-                      <a href="#">Show more</a>
+                      <a href="#amenities">Show more</a>
                     </div>
+
+                    <!-- booking options  -->
 
                     <div class="booking-options">
                       <h3>Booking options</h3>
                       <div class="switch">
-                        <div>
+                        <div class="switch-text">
                           <h5>Instant Book</h5>
                           <p>
                             Listings you can book without waiting for host
                             approval
                           </p>
                         </div>
-
-                        <input
-                          class="toggle"
-                          type="checkbox"
-                          id="toggle-1"
-                          name="toggle"
-                        />
-                        <label class="toggle-switch" for="toggle-1"></label>
+                        <div class="toggle-div">
+                          <input
+                            class="toggle"
+                            type="checkbox"
+                            id="toggle-1"
+                            name="toggle"
+                          />
+                          <label class="toggle-switch" for="toggle-1"></label>
+                        </div>
                       </div>
 
                       <div class="switch">
                         <div>
-                          <h5>Instant Book</h5>
-                          <p>
-                            Listings you can book without waiting for host
-                            approval
-                          </p>
+                          <h5>Self check-in</h5>
+                          <p>Easy access to the property once you arrive</p>
                         </div>
 
                         <input
@@ -578,27 +656,58 @@
                       </div>
                     </div>
 
-                    <div class="accessibility">
+                    <!-- accessibility features  -->
+
+                    <div class="accessibility" id="accessibility">
                       <h3>Accessibility features</h3>
 
                       <h4>Guest entrance and parking</h4>
+
                       <div>
-                        <div><h5>Step-free guest entrance</h5></div>
-                        <input type="checkbox" id="entrance" name="entrance" />
+                        <div class="access-text">
+                          <h5>Step-free guest entrance</h5>
+                        </div>
+                        <div class="checkbox-container">
+                          <input
+                            type="checkbox"
+                            id="access-1"
+                            name="access-1"
+                          />
+                        </div>
                       </div>
 
                       <div>
-                        <div><h5>Step-free guest entrance</h5></div>
-                        <input type="checkbox" id="entrance" name="entrance" />
+                        <div class="access-text">
+                          <h5>
+                            Guest entrance wider than 32 inches (81 centimetres)
+                          </h5>
+                        </div>
+                        <div class="checkbox-container">
+                          <input
+                            type="checkbox"
+                            id="access-2"
+                            name="access-2"
+                          />
+                        </div>
                       </div>
 
                       <div>
-                        <div><h5>Step-free guest entrance</h5></div>
-                        <input type="checkbox" id="entrance" name="entrance" />
+                        <div class="access-text">
+                          <h5>Accessible parking spot</h5>
+                        </div>
+                        <div class="checkbox-container">
+                          <input
+                            type="checkbox"
+                            id="access-3"
+                            name="access-3"
+                          />
+                        </div>
                       </div>
 
-                      <a href="#">Show more</a>
+                      <a href="#accessibility">Show more</a>
                     </div>
+
+                    <!-- top-tier stuff  -->
 
                     <div class="top-tier">
                       <h3>Top-tier stays</h3>
@@ -607,11 +716,15 @@
                           <h5>Superhost</h5>
                           <p>Stay with recognised hosts</p>
                         </div>
-                        <input
-                          type="checkbox"
-                          id="superhost"
-                          name="superhost"
-                        />
+                        <div class="toggle-div">
+                          <input
+                            class="toggle"
+                            type="checkbox"
+                            id="toggle-3"
+                            name="toggle"
+                          />
+                          <label class="toggle-switch" for="toggle-3"></label>
+                        </div>
                       </div>
 
                       <div>
@@ -619,33 +732,49 @@
                           <h5>Airbnb Plus</h5>
                           <p>Every Plus home is reviewed for quality</p>
                         </div>
-                        <input type="checkbox" id="plus" name="plus" />
+                        <div class="toggle-div">
+                          <input
+                            class="toggle"
+                            type="checkbox"
+                            id="toggle-4"
+                            name="toggle"
+                          />
+                          <label class="toggle-switch" for="toggle-4"></label>
+                        </div>
                       </div>
                     </div>
 
-                    <div class="language">
+                    <!-- language  -->
+
+                    <div class="language" id="language">
                       <h3>Host language</h3>
                       <div>
-                        <div><h5>English</h5></div>
+                        <h5>English</h5>
                         <input type="checkbox" id="eng" name="eng" />
                       </div>
 
                       <div>
-                        <div><h5>French</h5></div>
+                        <h5>French</h5>
                         <input type="checkbox" id="fre" name="fre" />
                       </div>
 
                       <div>
-                        <div><h5>German</h5></div>
+                        <h5>German</h5>
                         <input type="checkbox" id="ger" name="ger" />
                       </div>
 
-                      <a href="#">Show more</a>
+                      <a href="#language">Show more</a>
                     </div>
 
-                    <div class="filter-footer">
-                      <div><a href="#">Clear all</a></div>
-                      <div class="more-box"><a href="#">Show 978 homes</a></div>
+                    <!-- filter footer  -->
+
+                    <div class="filter-footer" id="filter-footer">
+                      <div>
+                        <div><a href="#filter-footer">Clear all</a></div>
+                        <div class="more-box" tabindex="0">
+                          <a href="#filter-footer">Show 978 homes</a>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>
