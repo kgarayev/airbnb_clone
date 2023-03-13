@@ -1,9 +1,15 @@
 header {
   position: sticky;
   top: 0;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  padding-top: 0.5rem;
   background-color: white;
   z-index: 1;
+}
+
+.logo {
+  height: 4rem;
+  display: none;
 }
 
 .top-bar {
@@ -12,11 +18,12 @@ header {
   display: flex;
   width: 92.5%;
   margin: auto;
-  height: 5.5rem;
+  height: 5.75rem;
   border-radius: 10rem;
   padding: 1rem;
   gap: 1rem;
   box-shadow: 0.005rem 0.005rem 3rem 0.00001rem rgb(233, 233, 233);
+  margin-bottom: 0.75rem;
 }
 
 .search-container {
@@ -26,6 +33,7 @@ header {
   justify-content: flex-start;
   /* flex-grow: 1; */
   width: 3rem;
+  /* margin-bottom: 0.5; */
 }
 
 .search {
@@ -157,4 +165,37 @@ header ::-webkit-scrollbar-thumb {
   border-radius: 1rem;
   background: black;
   -webkit-width: 1;
+}
+
+@media screen and (min-width: 750px) {
+  header {
+    /* display: flex; */
+  }
+
+  .sub-header {
+    display: flex;
+  }
+
+  .logo {
+    display: flex;
+    border: 0.01rem solid grey;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-bar {
+    width: 30%;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .top-bar-text {
+    display: none;
+  }
+
+  .filter-container {
+    display: none;
+  }
 }

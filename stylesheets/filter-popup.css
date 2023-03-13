@@ -26,12 +26,12 @@
   font-weight: 500;
 }
 
-.filter-container:focus-within .filter-popup {
+.filter:focus-within .filter-popup {
   transform: translateY(0%);
   transition: transform 0.5s ease-out;
 }
 
-.filter-container:focus-within aside {
+.filter:focus-within aside {
   display: none;
 }
 
@@ -619,7 +619,7 @@ input[type="radio"]:checked + label {
   justify-content: center;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
   .filter-menu {
     height: 85%;
   }
