@@ -1,15 +1,96 @@
+* {
+  /* border: 0.01rem solid grey; */
+}
+
 header {
   position: sticky;
   top: 0;
-  /* margin-top: 1rem; */
   padding-top: 0.5rem;
   background-color: white;
   z-index: 1;
 }
 
-.logo {
-  height: 4rem;
+.sub-header {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-header > div {
+  display: flex;
+  /* border: 0.01rem solid grey; */
+}
+
+.middle-container {
+  display: flex;
+  flex-grow: 2;
+}
+
+.end-container {
   display: none;
+  /* border: 0.01rem solid grey; */
+}
+
+.end-container div {
+  display: none;
+}
+
+.end-container img {
+  width: 1.75rem;
+}
+
+.end-container h4 {
+  line-height: 1.5;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.end-container .world {
+  /* border: 0.01rem solid grey; */
+}
+
+.top-menu {
+  border: 0.01rem solid rgb(197, 197, 197);
+  width: 7.5rem;
+  height: 4rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(100%);
+  padding: 0;
+}
+
+.top-profile a {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0;
+}
+
+.top-profile a .menu-icon {
+  filter: grayscale(100%);
+  width: 1.5rem;
+}
+
+.top-profile a .login-icon {
+  filter: grayscale(100%);
+  width: 3rem;
+}
+
+.logo {
+  height: 5.25rem;
+  display: none;
+  /* border: 0.01rem solid grey; */
+  margin-left: 2.75rem;
+  padding: 0.75rem;
+}
+
+.airbnb-name {
+  display: none;
+  font-size: 1.15rem;
+  color: #ff5a5f;
+  /* border: 0.01rem solid grey; */
+  text-align: center;
 }
 
 .top-bar {
@@ -18,12 +99,59 @@ header {
   display: flex;
   width: 92.5%;
   margin: auto;
-  height: 5.75rem;
+  height: 5.25rem;
   border-radius: 10rem;
-  padding: 1rem;
+  padding: 0.75rem;
   gap: 1rem;
   box-shadow: 0.005rem 0.005rem 3rem 0.00001rem rgb(233, 233, 233);
   margin-bottom: 0.75rem;
+}
+
+.desktop-options {
+  display: none;
+  width: 100%;
+  padding: 0.25rem;
+  /* border: 0.01rem solid grey; */
+}
+
+.desktop-options .text,
+.desktop-options .last-text {
+  padding: 0.5rem;
+  /* border: 0.01rem solid grey; */
+  text-align: center;
+  flex-grow: 10;
+  border-right: 0.01rem solid rgb(233, 233, 233);
+}
+
+.desktop-options .last-text {
+  border-right: none;
+  padding-right: 0;
+}
+
+.desktop-options .last-text h4 {
+  font-weight: 300;
+}
+
+.desktop-options h4 {
+  line-height: 1.5;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.desktop-options .search {
+  /* border: 0.01rem solid grey; */
+  border-radius: 10rem;
+  width: 3rem;
+  padding-top: 0.9rem;
+  padding-left: 0.65rem;
+  background-color: #ff5a5f;
+}
+
+.desktop-options .search .icon {
+  /* border: 0.01rem solid grey; */
+  width: 1.25rem;
+  height: 1.25rem;
+  filter: invert(100%);
 }
 
 .search-container {
@@ -104,7 +232,8 @@ header {
 /* scroll bar stuff  */
 
 .scroll-bar {
-  display: inline-block;
+  display: flex;
+  gap: 1.5rem;
   height: 5.75rem;
   width: 100%;
   margin-top: 0.75rem;
@@ -114,8 +243,10 @@ header {
 }
 
 .scroll-bar > div {
-  display: inline-block;
-  min-width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-width: 6rem; */
   padding: 0.5rem;
   height: 90%;
   /* border: 0.01rem solid grey; */
@@ -169,25 +300,43 @@ header ::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 750px) {
   header {
-    /* display: flex; */
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .sub-header {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 0.01rem solid rgb(212, 212, 212); */
+    border-bottom: 0.01rem solid rgb(212, 212, 212);
+    height: 8rem;
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .scroll-bar {
+    height: 10rem;
+    align-items: center;
   }
 
   .logo {
     display: flex;
-    border: 0.01rem solid grey;
-    margin: 0;
-    padding: 0;
   }
 
   .top-bar {
-    width: 30%;
+    width: 350px;
+    margin: 0;
+    margin-left: 1.75rem;
   }
 
-  .search {
+  .desktop-options {
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  .search-container {
     display: none;
   }
 
@@ -197,5 +346,39 @@ header ::-webkit-scrollbar-thumb {
 
   .filter-container {
     display: none;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .sub-header {
+    justify-content: center;
+  }
+
+  .sub-header > div {
+    width: 33.33%;
+  }
+
+  .airbnb-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .middle-container {
+    /* border: 0.01rem solid rgb(212, 212, 212); */
+    justify-content: center;
+  }
+
+  .end-container {
+    display: flex;
+    justify-content: flex-end;
+    /* border: 0.01rem solid grey; */
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2.75rem;
+  }
+
+  .end-container div {
+    display: flex;
   }
 }

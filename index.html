@@ -12,7 +12,7 @@
       href="./icons/favicon.png"
     />
 
-    <!-- hello  -->
+    <!-- linking stylesheets  -->
     <link rel="stylesheet" href="./stylesheets/generic.css" />
     <link rel="stylesheet" href="./stylesheets/styles.css" />
     <link rel="stylesheet" href="./stylesheets/header.css" />
@@ -27,775 +27,845 @@
 
   <body>
     <div class="container">
+      <!-- header that is sticky to the top  -->
       <header>
         <div class="sub-header">
-          <div class="logo">
-            <img src="./icons/airbnb-logo-2.png" alt="airbnb logo" />
+          <div class="first-container">
+            <!-- logo for the larger screen only  -->
+            <div class="logo">
+              <img src="./icons/airbnb-logo-2.png" alt="airbnb logo" />
+            </div>
+            <div class="airbnb-name"><h1>airbnb</h1></div>
           </div>
-          <div class="top-bar">
-            <div class="search-container">
-              <div class="search">
-                <a href="#">
-                  <img
-                    class="icon"
-                    src="./icons/magnifying.svg"
-                    alt="magnifying_glass_icon"
-                /></a>
+
+          <!-- top bar for search etc. -->
+          <div class="middle-container">
+            <div class="top-bar">
+              <!-- when the screen size is large -->
+              <div class="desktop-options">
+                <div class="text">
+                  <a href="#"><h4>Anywhere</h4></a>
+                </div>
+                <div class="text">
+                  <a href="#"><h4>Any week</h4></a>
+                </div>
+                <div class="last-text">
+                  <a href="#"><h4>Add guests</h4></a>
+                </div>
+                <div class="search">
+                  <a href="#">
+                    <img
+                      class="icon"
+                      src="./icons/magnifying.svg"
+                      alt="magnifying_glass_icon"
+                  /></a>
+                </div>
               </div>
-            </div>
 
-            <div class="top-bar-text">
-              <h4>Anywhere</h4>
-              <p>Any week <span>·</span> <span>Add guests</span></p>
-            </div>
+              <!-- for mobile version only -->
+              <div class="search-container">
+                <div class="search">
+                  <a href="#">
+                    <img
+                      class="icon"
+                      src="./icons/magnifying.svg"
+                      alt="magnifying_glass_icon"
+                  /></a>
+                </div>
+              </div>
 
-            <div class="filter-container" tabindex="0">
-              <div class="filter" tabindex="0">
+              <div class="top-bar-text">
                 <a href="#">
-                  <img
-                    class="icon"
-                    src="./icons/filter.png"
-                    alt="filter_icon"
-                  />
-                </a>
+                  <h4>Anywhere</h4>
+                  <p>Any week <span>·</span> <span>Add guests</span></p></a
+                >
+              </div>
 
-                <div class="filter-popup">
-                  <div class="filter-menu">
-                    <form>
-                      <div class="filter-heading">
-                        <h4>Filters</h4>
-                        <a href="index.html" tabindex="0">
-                          <img
-                            class="icon"
-                            src="./icons/close.svg"
-                            alt="cross icon"
-                        /></a>
-                      </div>
+              <div class="filter-container" tabindex="0">
+                <div class="filter" tabindex="0">
+                  <a href="#">
+                    <img
+                      class="icon"
+                      src="./icons/filter.png"
+                      alt="filter_icon"
+                    />
+                  </a>
 
-                      <div class="price">
-                        <h3>Price range</h3>
-                        <p>The average nightly price is £181</p>
-                        <div class="range">
-                          <div class="price-box">
-                            <div class="price-text">min price</div>
-                            <div class="input-area">
-                              <div>£</div>
+                  <div class="filter-popup">
+                    <div class="filter-menu">
+                      <form>
+                        <div class="filter-heading">
+                          <h4>Filters</h4>
+                          <a href="index.html" tabindex="0">
+                            <img
+                              class="icon"
+                              src="./icons/close.svg"
+                              alt="cross icon"
+                          /></a>
+                        </div>
 
+                        <div class="price">
+                          <h3>Price range</h3>
+                          <p>The average nightly price is £181</p>
+                          <div class="range">
+                            <div class="price-box">
+                              <div class="price-text">min price</div>
+                              <div class="input-area">
+                                <div>£</div>
+
+                                <input
+                                  type="number"
+                                  id="minval"
+                                  name="minval"
+                                  value="8"
+                                  min="8"
+                                  max="973"
+                                />
+                              </div>
+                            </div>
+
+                            <div class="divider">-</div>
+
+                            <div class="price-box">
+                              <div class="price-text">max price</div>
+                              <div class="input-area">
+                                <div>£</div>
+
+                                <input
+                                  type="number"
+                                  id="maxval"
+                                  name="maxval"
+                                  value="973"
+                                  min="8"
+                                  max="973"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="place-type">
+                          <h3>Type of place</h3>
+                          <div class="place-type-option">
+                            <div class="place-text">
+                              <h5>Entire place</h5>
+                              <p>A place all to yourself</p>
+                            </div>
+                            <div class="checkbox-container">
                               <input
-                                type="number"
-                                id="minval"
-                                name="minval"
-                                value="8"
-                                min="8"
-                                max="973"
+                                class="checkbox"
+                                type="checkbox"
+                                id="entire"
+                                name="entire"
                               />
                             </div>
                           </div>
 
-                          <div class="divider">-</div>
-
-                          <div class="price-box">
-                            <div class="price-text">max price</div>
-                            <div class="input-area">
-                              <div>£</div>
-
+                          <div class="place-type-option">
+                            <div class="place-text">
+                              <h5>Private room</h5>
+                              <p>
+                                Your own room in a home or a hotel, plus some
+                                shared common spaces
+                              </p>
+                            </div>
+                            <div class="checkbox-container">
                               <input
-                                type="number"
-                                id="maxval"
-                                name="maxval"
-                                value="973"
-                                min="8"
-                                max="973"
+                                class="checkbox"
+                                type="checkbox"
+                                id="private"
+                                name="private"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="place-type-option">
+                            <div class="place-text">
+                              <h5>Shared room</h5>
+                              <p>
+                                A sleeping space and common areas that may be
+                                shared with others
+                              </p>
+                            </div>
+                            <div class="checkbox-container">
+                              <input
+                                class="checkbox"
+                                type="checkbox"
+                                id="shared"
+                                name="shared"
                               />
                             </div>
                           </div>
                         </div>
-                      </div>
 
-                      <div class="place-type">
-                        <h3>Type of place</h3>
-                        <div class="place-type-option">
-                          <div class="place-text">
-                            <h5>Entire place</h5>
-                            <p>A place all to yourself</p>
-                          </div>
-                          <div class="checkbox-container">
-                            <input
-                              class="checkbox"
-                              type="checkbox"
-                              id="entire"
-                              name="entire"
-                            />
-                          </div>
-                        </div>
+                        <!-- rooms and beds  -->
 
-                        <div class="place-type-option">
-                          <div class="place-text">
-                            <h5>Private room</h5>
-                            <p>
-                              Your own room in a home or a hotel, plus some
-                              shared common spaces
-                            </p>
-                          </div>
-                          <div class="checkbox-container">
-                            <input
-                              class="checkbox"
-                              type="checkbox"
-                              id="private"
-                              name="private"
-                            />
-                          </div>
-                        </div>
+                        <div class="rooms">
+                          <h3>Rooms and beds</h3>
+                          <div class="space">
+                            <h5>Bedrooms</h5>
+                            <div class="scroll-bar" tabindex="0">
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="any"
+                                  name="room"
+                                  value="any"
+                                />
+                                <label for="any">Any</label>
+                              </div>
 
-                        <div class="place-type-option">
-                          <div class="place-text">
-                            <h5>Shared room</h5>
-                            <p>
-                              A sleeping space and common areas that may be
-                              shared with others
-                            </p>
-                          </div>
-                          <div class="checkbox-container">
-                            <input
-                              class="checkbox"
-                              type="checkbox"
-                              id="shared"
-                              name="shared"
-                            />
-                          </div>
-                        </div>
-                      </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="one"
+                                  name="room"
+                                  value="1"
+                                />
+                                <label for="one">1</label>
+                              </div>
 
-                      <!-- rooms and beds  -->
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="two"
+                                  name="room"
+                                  value="2"
+                                />
+                                <label for="two">2</label>
+                              </div>
 
-                      <div class="rooms">
-                        <h3>Rooms and beds</h3>
-                        <div class="space">
-                          <h5>Bedrooms</h5>
-                          <div class="scroll-bar" tabindex="0">
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="any"
-                                name="room"
-                                value="any"
-                              />
-                              <label for="any">Any</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="three"
+                                  name="room"
+                                  value="3"
+                                />
+                                <label for="three">3</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="one"
-                                name="room"
-                                value="1"
-                              />
-                              <label for="one">1</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="four"
+                                  name="room"
+                                  value="4"
+                                />
+                                <label for="four">4</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="two"
-                                name="room"
-                                value="2"
-                              />
-                              <label for="two">2</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="five"
+                                  name="room"
+                                  value="5"
+                                />
+                                <label for="five">5</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="three"
-                                name="room"
-                                value="3"
-                              />
-                              <label for="three">3</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="six"
+                                  name="room"
+                                  value="6"
+                                />
+                                <label for="six">6</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="four"
-                                name="room"
-                                value="4"
-                              />
-                              <label for="four">4</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="seven"
+                                  name="room"
+                                  value="7"
+                                />
+                                <label for="seven">7</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="five"
-                                name="room"
-                                value="5"
-                              />
-                              <label for="five">5</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="eight"
+                                  name="room"
+                                  value="8"
+                                />
+                                <label for="eight">8</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="six"
-                                name="room"
-                                value="6"
-                              />
-                              <label for="six">6</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="nine"
+                                  name="room"
+                                  value="9"
+                                />
+                                <label for="nine">9</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="seven"
-                                name="room"
-                                value="7"
-                              />
-                              <label for="seven">7</label>
-                            </div>
-
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="eight"
-                                name="room"
-                                value="8"
-                              />
-                              <label for="eight">8</label>
-                            </div>
-
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="nine"
-                                name="room"
-                                value="9"
-                              />
-                              <label for="nine">9</label>
-                            </div>
-
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="ten"
-                                name="room"
-                                value="10"
-                              />
-                              <label for="ten">10</label>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="ten"
+                                  name="room"
+                                  value="10"
+                                />
+                                <label for="ten">10</label>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="space">
-                          <h5>Beds</h5>
-                          <div class="scroll-bar" tabindex="0">
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-any"
-                                name="bed"
-                                value="any"
-                              />
-                              <label for="bed-any">Any</label>
-                            </div>
+                          <div class="space">
+                            <h5>Beds</h5>
+                            <div class="scroll-bar" tabindex="0">
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-any"
+                                  name="bed"
+                                  value="any"
+                                />
+                                <label for="bed-any">Any</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-1"
-                                name="bed"
-                                value="1"
-                              />
-                              <label for="bed-1">1</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-1"
+                                  name="bed"
+                                  value="1"
+                                />
+                                <label for="bed-1">1</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-2"
-                                name="bed"
-                                value="2"
-                              />
-                              <label for="bed-2">2</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-2"
+                                  name="bed"
+                                  value="2"
+                                />
+                                <label for="bed-2">2</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-3"
-                                name="bed"
-                                value="3"
-                              />
-                              <label for="bed-3">3</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-3"
+                                  name="bed"
+                                  value="3"
+                                />
+                                <label for="bed-3">3</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-4"
-                                name="bed"
-                                value="4"
-                              />
-                              <label for="bed-4">4</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-4"
+                                  name="bed"
+                                  value="4"
+                                />
+                                <label for="bed-4">4</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-5"
-                                name="bed"
-                                value="5"
-                              />
-                              <label for="bed-5">5</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-5"
+                                  name="bed"
+                                  value="5"
+                                />
+                                <label for="bed-5">5</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-6"
-                                name="bed"
-                                value="6"
-                              />
-                              <label for="bed-6">6</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-6"
+                                  name="bed"
+                                  value="6"
+                                />
+                                <label for="bed-6">6</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-7"
-                                name="bed"
-                                value="7"
-                              />
-                              <label for="bed-7">7</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-7"
+                                  name="bed"
+                                  value="7"
+                                />
+                                <label for="bed-7">7</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-8"
-                                name="bed"
-                                value="8"
-                              />
-                              <label for="bed-8">8</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-8"
+                                  name="bed"
+                                  value="8"
+                                />
+                                <label for="bed-8">8</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-9"
-                                name="bed"
-                                value="9"
-                              />
-                              <label for="bed-9">9</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-9"
+                                  name="bed"
+                                  value="9"
+                                />
+                                <label for="bed-9">9</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bed-10"
-                                name="bed"
-                                value="10"
-                              />
-                              <label for="bed-10">10</label>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bed-10"
+                                  name="bed"
+                                  value="10"
+                                />
+                                <label for="bed-10">10</label>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="space">
-                          <h5>Bathrooms</h5>
-                          <div class="scroll-bar" tabindex="0">
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-any"
-                                name="bath"
-                                value="any"
-                              />
-                              <label for="bath-any">Any</label>
-                            </div>
+                          <div class="space">
+                            <h5>Bathrooms</h5>
+                            <div class="scroll-bar" tabindex="0">
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-any"
+                                  name="bath"
+                                  value="any"
+                                />
+                                <label for="bath-any">Any</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-1"
-                                name="bath"
-                                value="1"
-                              />
-                              <label for="bath-1">1</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-1"
+                                  name="bath"
+                                  value="1"
+                                />
+                                <label for="bath-1">1</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-2"
-                                name="bath"
-                                value="2"
-                              />
-                              <label for="bath-2">2</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-2"
+                                  name="bath"
+                                  value="2"
+                                />
+                                <label for="bath-2">2</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-3"
-                                name="bath"
-                                value="3"
-                              />
-                              <label for="bath-3">3</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-3"
+                                  name="bath"
+                                  value="3"
+                                />
+                                <label for="bath-3">3</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-4"
-                                name="bath"
-                                value="4"
-                              />
-                              <label for="bath-4">4</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-4"
+                                  name="bath"
+                                  value="4"
+                                />
+                                <label for="bath-4">4</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-5"
-                                name="bath"
-                                value="5"
-                              />
-                              <label for="bath-5">5</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-5"
+                                  name="bath"
+                                  value="5"
+                                />
+                                <label for="bath-5">5</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-6"
-                                name="bath"
-                                value="6"
-                              />
-                              <label for="bath-6">6</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-6"
+                                  name="bath"
+                                  value="6"
+                                />
+                                <label for="bath-6">6</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-7"
-                                name="bath"
-                                value="7"
-                              />
-                              <label for="bath-7">7</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-7"
+                                  name="bath"
+                                  value="7"
+                                />
+                                <label for="bath-7">7</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-8"
-                                name="bath"
-                                value="8"
-                              />
-                              <label for="bath-8">8</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-8"
+                                  name="bath"
+                                  value="8"
+                                />
+                                <label for="bath-8">8</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-9"
-                                name="bath"
-                                value="9"
-                              />
-                              <label for="bath-9">9</label>
-                            </div>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-9"
+                                  name="bath"
+                                  value="9"
+                                />
+                                <label for="bath-9">9</label>
+                              </div>
 
-                            <div class="number">
-                              <input
-                                type="radio"
-                                id="bath-10"
-                                name="bath"
-                                value="10"
-                              />
-                              <label for="bath-10">10</label>
+                              <div class="number">
+                                <input
+                                  type="radio"
+                                  id="bath-10"
+                                  name="bath"
+                                  value="10"
+                                />
+                                <label for="bath-10">10</label>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
 
-                      <!-- property stuff  -->
+                        <!-- property stuff  -->
 
-                      <div class="property">
-                        <h3>Property type</h3>
-                        <div class="property-grid">
-                          <div class="property-item">
-                            <input
-                              class="property-checkbox"
-                              type="checkbox"
-                              id="house"
-                              name="house"
-                              value="house"
-                            />
-                            <label for="house"
-                              ><img src="./icons/house.svg" alt="house-icon" />
-                              <p>House</p></label
-                            >
-                          </div>
-
-                          <div class="property-item">
-                            <input
-                              class="property-checkbox"
-                              type="checkbox"
-                              id="flat"
-                              name="flat"
-                              value="flat"
-                            />
-                            <label for="flat"
-                              ><img src="./icons/flat.svg" alt="flat-icon" />
-                              <p>Flat</p></label
-                            >
-                          </div>
-                          <div class="property-item">
-                            <input
-                              class="property-checkbox"
-                              type="checkbox"
-                              id="guesthouse"
-                              name="guesthouse"
-                              value="guesthouse"
-                            />
-                            <label for="guesthouse"
-                              ><img
-                                src="./icons/guesthouse.svg"
-                                alt="guesthouse-icon"
+                        <div class="property">
+                          <h3>Property type</h3>
+                          <div class="property-grid">
+                            <div class="property-item">
+                              <input
+                                class="property-checkbox"
+                                type="checkbox"
+                                id="house"
+                                name="house"
+                                value="house"
                               />
-                              <p>Guest house</p></label
-                            >
-                          </div>
-                          <div class="property-item">
-                            <input
-                              class="property-checkbox"
-                              type="checkbox"
-                              id="hotel"
-                              name="hotel"
-                              value="hotel"
-                            />
-                            <label for="hotel"
-                              ><img src="./icons/hotel.svg" alt="hotel-icon" />
-                              <p>Hotel</p></label
-                            >
-                          </div>
-                        </div>
-                      </div>
+                              <label for="house"
+                                ><img
+                                  src="./icons/house.svg"
+                                  alt="house-icon"
+                                />
+                                <p>House</p></label
+                              >
+                            </div>
 
-                      <!-- amenities  -->
-
-                      <div class="amenities" id="amenities">
-                        <h3>Amenities</h3>
-                        <h4>Essentials</h4>
-                        <div>
-                          <div class="amenities-text"><h5>Wifi</h5></div>
-                          <div class="checkbox-container">
-                            <input type="checkbox" id="wifi" name="wifi" />
-                          </div>
-                        </div>
-
-                        <div>
-                          <div class="amenities-text"><h5>Kitchen</h5></div>
-                          <div class="checkbox-container">
-                            <input
-                              type="checkbox"
-                              id="kitchen"
-                              name="kitchen"
-                            />
-                          </div>
-                        </div>
-
-                        <div>
-                          <div class="amenities-text">
-                            <h5>Washing machine</h5>
-                          </div>
-                          <div class="checkbox-container">
-                            <input
-                              type="checkbox"
-                              id="washing"
-                              name="washing"
-                            />
-                          </div>
-                        </div>
-
-                        <div>
-                          <div class="amenities-text"><h5>Dryer</h5></div>
-                          <div class="checkbox-container">
-                            <input type="checkbox" id="dryer" name="dryer" />
+                            <div class="property-item">
+                              <input
+                                class="property-checkbox"
+                                type="checkbox"
+                                id="flat"
+                                name="flat"
+                                value="flat"
+                              />
+                              <label for="flat"
+                                ><img src="./icons/flat.svg" alt="flat-icon" />
+                                <p>Flat</p></label
+                              >
+                            </div>
+                            <div class="property-item">
+                              <input
+                                class="property-checkbox"
+                                type="checkbox"
+                                id="guesthouse"
+                                name="guesthouse"
+                                value="guesthouse"
+                              />
+                              <label for="guesthouse"
+                                ><img
+                                  src="./icons/guesthouse.svg"
+                                  alt="guesthouse-icon"
+                                />
+                                <p>Guest house</p></label
+                              >
+                            </div>
+                            <div class="property-item">
+                              <input
+                                class="property-checkbox"
+                                type="checkbox"
+                                id="hotel"
+                                name="hotel"
+                                value="hotel"
+                              />
+                              <label for="hotel"
+                                ><img
+                                  src="./icons/hotel.svg"
+                                  alt="hotel-icon"
+                                />
+                                <p>Hotel</p></label
+                              >
+                            </div>
                           </div>
                         </div>
 
-                        <div>
-                          <div class="amenities-text">
-                            <h5>Air conditioning</h5>
+                        <!-- amenities  -->
+
+                        <div class="amenities" id="amenities">
+                          <h3>Amenities</h3>
+                          <h4>Essentials</h4>
+                          <div>
+                            <div class="amenities-text"><h5>Wifi</h5></div>
+                            <div class="checkbox-container">
+                              <input type="checkbox" id="wifi" name="wifi" />
+                            </div>
                           </div>
-                          <div class="checkbox-container">
-                            <input type="checkbox" id="air" name="air" />
+
+                          <div>
+                            <div class="amenities-text"><h5>Kitchen</h5></div>
+                            <div class="checkbox-container">
+                              <input
+                                type="checkbox"
+                                id="kitchen"
+                                name="kitchen"
+                              />
+                            </div>
                           </div>
+
+                          <div>
+                            <div class="amenities-text">
+                              <h5>Washing machine</h5>
+                            </div>
+                            <div class="checkbox-container">
+                              <input
+                                type="checkbox"
+                                id="washing"
+                                name="washing"
+                              />
+                            </div>
+                          </div>
+
+                          <div>
+                            <div class="amenities-text"><h5>Dryer</h5></div>
+                            <div class="checkbox-container">
+                              <input type="checkbox" id="dryer" name="dryer" />
+                            </div>
+                          </div>
+
+                          <div>
+                            <div class="amenities-text">
+                              <h5>Air conditioning</h5>
+                            </div>
+                            <div class="checkbox-container">
+                              <input type="checkbox" id="air" name="air" />
+                            </div>
+                          </div>
+
+                          <a href="#amenities">Show more</a>
                         </div>
 
-                        <a href="#amenities">Show more</a>
-                      </div>
+                        <!-- booking options  -->
 
-                      <!-- booking options  -->
-
-                      <div class="booking-options">
-                        <h3>Booking options</h3>
-                        <div class="switch">
-                          <div class="switch-text">
-                            <h5>Instant Book</h5>
-                            <p>
-                              Listings you can book without waiting for host
-                              approval
-                            </p>
+                        <div class="booking-options">
+                          <h3>Booking options</h3>
+                          <div class="switch">
+                            <div class="switch-text">
+                              <h5>Instant Book</h5>
+                              <p>
+                                Listings you can book without waiting for host
+                                approval
+                              </p>
+                            </div>
+                            <div class="toggle-div">
+                              <input
+                                class="toggle"
+                                type="checkbox"
+                                id="toggle-1"
+                                name="toggle"
+                              />
+                              <label
+                                class="toggle-switch"
+                                for="toggle-1"
+                              ></label>
+                            </div>
                           </div>
-                          <div class="toggle-div">
+
+                          <div class="switch">
+                            <div>
+                              <h5>Self check-in</h5>
+                              <p>Easy access to the property once you arrive</p>
+                            </div>
+
                             <input
                               class="toggle"
                               type="checkbox"
-                              id="toggle-1"
+                              id="toggle-2"
                               name="toggle"
                             />
-                            <label class="toggle-switch" for="toggle-1"></label>
+                            <label class="toggle-switch" for="toggle-2"></label>
                           </div>
                         </div>
 
-                        <div class="switch">
+                        <!-- accessibility features  -->
+
+                        <div class="accessibility" id="accessibility">
+                          <h3>Accessibility features</h3>
+
+                          <h4>Guest entrance and parking</h4>
+
                           <div>
-                            <h5>Self check-in</h5>
-                            <p>Easy access to the property once you arrive</p>
+                            <div class="access-text">
+                              <h5>Step-free guest entrance</h5>
+                            </div>
+                            <div class="checkbox-container">
+                              <input
+                                type="checkbox"
+                                id="access-1"
+                                name="access-1"
+                              />
+                            </div>
                           </div>
 
-                          <input
-                            class="toggle"
-                            type="checkbox"
-                            id="toggle-2"
-                            name="toggle"
-                          />
-                          <label class="toggle-switch" for="toggle-2"></label>
-                        </div>
-                      </div>
-
-                      <!-- accessibility features  -->
-
-                      <div class="accessibility" id="accessibility">
-                        <h3>Accessibility features</h3>
-
-                        <h4>Guest entrance and parking</h4>
-
-                        <div>
-                          <div class="access-text">
-                            <h5>Step-free guest entrance</h5>
-                          </div>
-                          <div class="checkbox-container">
-                            <input
-                              type="checkbox"
-                              id="access-1"
-                              name="access-1"
-                            />
-                          </div>
-                        </div>
-
-                        <div>
-                          <div class="access-text">
-                            <h5>
-                              Guest entrance wider than 32 inches (81
-                              centimetres)
-                            </h5>
-                          </div>
-                          <div class="checkbox-container">
-                            <input
-                              type="checkbox"
-                              id="access-2"
-                              name="access-2"
-                            />
-                          </div>
-                        </div>
-
-                        <div>
-                          <div class="access-text">
-                            <h5>Accessible parking spot</h5>
-                          </div>
-                          <div class="checkbox-container">
-                            <input
-                              type="checkbox"
-                              id="access-3"
-                              name="access-3"
-                            />
-                          </div>
-                        </div>
-
-                        <a href="#accessibility">Show more</a>
-                      </div>
-
-                      <!-- top-tier stuff  -->
-
-                      <div class="top-tier">
-                        <h3>Top-tier stays</h3>
-                        <div>
                           <div>
-                            <h5>Superhost</h5>
-                            <p>Stay with recognised hosts</p>
+                            <div class="access-text">
+                              <h5>
+                                Guest entrance wider than 32 inches (81
+                                centimetres)
+                              </h5>
+                            </div>
+                            <div class="checkbox-container">
+                              <input
+                                type="checkbox"
+                                id="access-2"
+                                name="access-2"
+                              />
+                            </div>
                           </div>
-                          <div class="toggle-div">
-                            <input
-                              class="toggle"
-                              type="checkbox"
-                              id="toggle-3"
-                              name="toggle"
-                            />
-                            <label class="toggle-switch" for="toggle-3"></label>
-                          </div>
-                        </div>
 
-                        <div>
                           <div>
-                            <h5>Airbnb Plus</h5>
-                            <p>Every Plus home is reviewed for quality</p>
+                            <div class="access-text">
+                              <h5>Accessible parking spot</h5>
+                            </div>
+                            <div class="checkbox-container">
+                              <input
+                                type="checkbox"
+                                id="access-3"
+                                name="access-3"
+                              />
+                            </div>
                           </div>
-                          <div class="toggle-div">
-                            <input
-                              class="toggle"
-                              type="checkbox"
-                              id="toggle-4"
-                              name="toggle"
-                            />
-                            <label class="toggle-switch" for="toggle-4"></label>
+
+                          <a href="#accessibility">Show more</a>
+                        </div>
+
+                        <!-- top-tier stuff  -->
+
+                        <div class="top-tier">
+                          <h3>Top-tier stays</h3>
+                          <div>
+                            <div>
+                              <h5>Superhost</h5>
+                              <p>Stay with recognised hosts</p>
+                            </div>
+                            <div class="toggle-div">
+                              <input
+                                class="toggle"
+                                type="checkbox"
+                                id="toggle-3"
+                                name="toggle"
+                              />
+                              <label
+                                class="toggle-switch"
+                                for="toggle-3"
+                              ></label>
+                            </div>
+                          </div>
+
+                          <div>
+                            <div>
+                              <h5>Airbnb Plus</h5>
+                              <p>Every Plus home is reviewed for quality</p>
+                            </div>
+                            <div class="toggle-div">
+                              <input
+                                class="toggle"
+                                type="checkbox"
+                                id="toggle-4"
+                                name="toggle"
+                              />
+                              <label
+                                class="toggle-switch"
+                                for="toggle-4"
+                              ></label>
+                            </div>
                           </div>
                         </div>
-                      </div>
 
-                      <!-- language  -->
+                        <!-- language  -->
 
-                      <div class="language" id="language">
-                        <h3>Host language</h3>
-                        <div>
-                          <h5>English</h5>
-                          <input type="checkbox" id="eng" name="eng" />
+                        <div class="language" id="language">
+                          <h3>Host language</h3>
+                          <div>
+                            <h5>English</h5>
+                            <input type="checkbox" id="eng" name="eng" />
+                          </div>
+
+                          <div>
+                            <h5>French</h5>
+                            <input type="checkbox" id="fre" name="fre" />
+                          </div>
+
+                          <div>
+                            <h5>German</h5>
+                            <input type="checkbox" id="ger" name="ger" />
+                          </div>
+
+                          <a href="#language">Show more</a>
                         </div>
 
-                        <div>
-                          <h5>French</h5>
-                          <input type="checkbox" id="fre" name="fre" />
-                        </div>
+                        <!-- filter footer  -->
 
-                        <div>
-                          <h5>German</h5>
-                          <input type="checkbox" id="ger" name="ger" />
-                        </div>
-
-                        <a href="#language">Show more</a>
-                      </div>
-
-                      <!-- filter footer  -->
-
-                      <div class="filter-footer" id="filter-footer">
-                        <div>
-                          <div><a href="#filter-footer">Clear all</a></div>
-                          <div class="more-box" tabindex="0">
-                            <a href="#filter-footer">Show 978 homes</a>
+                        <div class="filter-footer" id="filter-footer">
+                          <div>
+                            <div><a href="#filter-footer">Clear all</a></div>
+                            <div class="more-box" tabindex="0">
+                              <a href="#filter-footer">Show 978 homes</a>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </form>
+                      </form>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="end-container">
+            <div class="text">
+              <a href="#"><h4>Airbnb your home</h4></a>
+            </div>
+            <div class="world">
+              <a href="#"
+                ><img class="icon" src="./icons/world.svg" alt="world_icon"
+              /></a>
+            </div>
+            <div class="top-menu">
+              <div class="top-profile">
+                <a href="#">
+                  <img
+                    class="menu-icon"
+                    src="./icons/menu-burger.svg"
+                    alt="menu icon" />
+
+                  <img class="login-icon" src="./icons/login.png" alt="login"
+                /></a>
               </div>
             </div>
           </div>
