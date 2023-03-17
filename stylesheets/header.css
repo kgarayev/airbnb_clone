@@ -3,11 +3,17 @@
 }
 
 header {
-  position: sticky;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 0;
+  left: 0;
   padding-top: 0.5rem;
   background-color: white;
   z-index: 1;
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
 }
 
 .sub-header {
@@ -30,7 +36,7 @@ header {
   /* border: 0.01rem solid grey; */
 }
 
-.end-container div {
+.end-container > div {
   display: none;
 }
 
@@ -56,8 +62,49 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: grayscale(100%);
   padding: 0;
+  cursor: pointer;
+}
+
+.top-profile {
+  position: relative;
+}
+
+.popup-menu {
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: -18rem;
+  font-size: 1.35rem;
+  width: 240px;
+  height: 240px;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  border-radius: 1rem;
+  /* border: 0.01rem solid rgb(243, 243, 243); */
+  box-shadow: 0.005rem 0.005rem 1rem 0.00001rem rgb(207, 207, 207);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.top-menu:focus-within .popup-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.popup-menu a {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-menu a:hover {
+  background-color: rgb(244, 244, 244);
+}
+
+.popup-menu a p {
+  margin: auto;
+  margin-left: 2rem;
 }
 
 .top-profile a {
@@ -65,15 +112,14 @@ header {
   justify-content: space-between;
   gap: 0.75rem;
   padding: 0;
+  filter: grayscale(100%);
 }
 
 .top-profile a .menu-icon {
-  filter: grayscale(100%);
   width: 1.5rem;
 }
 
 .top-profile a .login-icon {
-  filter: grayscale(100%);
   width: 3rem;
 }
 
@@ -81,7 +127,7 @@ header {
   height: 5.25rem;
   display: none;
   /* border: 0.01rem solid grey; */
-  margin-left: 2.75rem;
+  margin-left: 1.75rem;
   padding: 0.75rem;
 }
 
@@ -142,6 +188,7 @@ header {
   /* border: 0.01rem solid grey; */
   border-radius: 10rem;
   width: 3rem;
+  height: 3rem;
   padding-top: 0.9rem;
   padding-left: 0.65rem;
   background-color: #ff5a5f;
@@ -206,6 +253,7 @@ header {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
+  cursor: pointer;
   /* border: 0.01rem solid grey; */
   /* background-color: aqua; */
 }
@@ -233,12 +281,15 @@ header {
 
 .scroll-bar {
   display: flex;
+  position: relative;
   gap: 1.5rem;
   height: 5.75rem;
-  width: 100%;
+  width: 92.5%;
+  margin: auto;
   margin-top: 0.75rem;
   overflow: auto;
   white-space: nowrap;
+  border-bottom: 0.001rem solid rgb(225, 225, 225);
   /* border: 0.01rem solid grey; */
 }
 
@@ -255,6 +306,50 @@ header {
   font-weight: 600;
   text-align: center;
   filter: opacity(60%);
+}
+
+.desktop-filter {
+  position: fixed;
+  display: none;
+  right: 2rem;
+  top: 10.5rem;
+  z-index: 2;
+  background-color: white;
+  width: 10rem;
+  height: 5rem;
+  border: 0.01rem solid rgb(205, 205, 205);
+  border-radius: 1rem;
+}
+
+.blur {
+  display: none;
+  /* border: 0.01rem solid grey; */
+  width: 3rem;
+  height: 5rem;
+  position: fixed;
+  right: 11rem;
+  top: 10.5rem;
+  z-index: 2;
+  background-color: white;
+}
+
+.desktop-filter a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  /* border: 0.01rem solid grey; */
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.desktop-filter img {
+  width: 2rem;
+  height: 2rem;
 }
 
 .scroll-bar > div .icon {
@@ -302,6 +397,12 @@ header ::-webkit-scrollbar-thumb {
   header {
     margin-top: 0;
     padding-top: 0;
+    border-bottom: none;
+  }
+
+  .scroll-bar {
+    border-bottom: none;
+    width: 95%;
   }
 
   .sub-header {
@@ -345,7 +446,39 @@ header ::-webkit-scrollbar-thumb {
   }
 
   .filter-container {
-    display: none;
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    right: 2rem;
+    top: 10.5rem;
+    z-index: 2;
+    background-color: white;
+    width: 10rem;
+    height: 5rem;
+    border: 0.01rem solid rgb(205, 205, 205);
+    border-radius: 1rem;
+  }
+
+  .desktop-filter {
+    display: flex;
+    justify-content: end;
+  }
+
+  .blur {
+    display: initial;
+  }
+
+  .end-container {
+    display: flex;
+    justify-content: flex-end;
+    /* border: 0.01rem solid grey; */
+    align-items: center;
+    gap: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .end-container > div {
+    display: flex;
   }
 }
 
@@ -367,18 +500,5 @@ header ::-webkit-scrollbar-thumb {
   .middle-container {
     /* border: 0.01rem solid rgb(212, 212, 212); */
     justify-content: center;
-  }
-
-  .end-container {
-    display: flex;
-    justify-content: flex-end;
-    /* border: 0.01rem solid grey; */
-    align-items: center;
-    gap: 2rem;
-    padding-right: 2.75rem;
-  }
-
-  .end-container div {
-    display: flex;
   }
 }

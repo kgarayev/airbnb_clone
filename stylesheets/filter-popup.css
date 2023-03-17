@@ -26,7 +26,7 @@
   font-weight: 500;
 }
 
-.filter:focus-within .filter-popup {
+.filter-container:focus-within .filter-popup {
   transform: translateY(0%);
   transition: transform 0.5s ease-out;
 }
@@ -257,12 +257,13 @@ input[type="checkbox"]:checked::before {
 .space {
   padding-left: 0.5rem;
   height: 12rem;
+  margin-bottom: 2.5rem;
 }
 
 .space .number {
-  margin-top: 0rem;
+  margin-top: 1rem;
   padding-top: 0;
-  margin-right: 1rem;
+  margin-right: 0;
 }
 
 .space .scroll-bar {
@@ -280,7 +281,7 @@ input[type="radio"]:checked {
 input[type="radio"] + label {
   display: inline-block;
   padding: 0.75rem;
-  margin: auto;
+  margin: 0;
   cursor: pointer;
   color: black;
   background-color: white;
