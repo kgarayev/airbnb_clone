@@ -11,6 +11,7 @@ main {
   margin: 1.5rem;
   margin-top: 14rem;
   margin-bottom: 3rem;
+  padding-bottom: 3rem;
   display: grid;
   /* flex-wrap: wrap; */
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
