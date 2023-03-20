@@ -11,6 +11,24 @@
       sizes="32x32"
       href="./icons/favicon.png"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href=".icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- linking stylesheets  -->
     <link rel="stylesheet" href="./stylesheets/generic.css" />
@@ -99,7 +117,9 @@
                       alt="filter_icon"
                     />
                   </a>
+                </div>
 
+                <div>
                   <div class="filter-popup" id="filter-popup">
                     <div class="filter-menu">
                       <form>
@@ -155,54 +175,56 @@
 
                         <div class="place-type">
                           <h3>Type of place</h3>
-                          <div class="place-type-option">
-                            <div class="place-text">
-                              <h5>Entire place</h5>
-                              <p>A place all to yourself</p>
+                          <div class="place-grid">
+                            <div class="place-type-option">
+                              <div class="place-text">
+                                <h5>Entire place</h5>
+                                <p>A place all to yourself</p>
+                              </div>
+                              <div class="checkbox-container">
+                                <input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="entire"
+                                  name="entire"
+                                />
+                              </div>
                             </div>
-                            <div class="checkbox-container">
-                              <input
-                                class="checkbox"
-                                type="checkbox"
-                                id="entire"
-                                name="entire"
-                              />
-                            </div>
-                          </div>
 
-                          <div class="place-type-option">
-                            <div class="place-text">
-                              <h5>Private room</h5>
-                              <p>
-                                Your own room in a home or a hotel, plus some
-                                shared common spaces
-                              </p>
+                            <div class="place-type-option">
+                              <div class="place-text">
+                                <h5>Private room</h5>
+                                <p>
+                                  Your own room in a home or a hotel, plus some
+                                  shared common spaces
+                                </p>
+                              </div>
+                              <div class="checkbox-container">
+                                <input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="private"
+                                  name="private"
+                                />
+                              </div>
                             </div>
-                            <div class="checkbox-container">
-                              <input
-                                class="checkbox"
-                                type="checkbox"
-                                id="private"
-                                name="private"
-                              />
-                            </div>
-                          </div>
 
-                          <div class="place-type-option">
-                            <div class="place-text">
-                              <h5>Shared room</h5>
-                              <p>
-                                A sleeping space and common areas that may be
-                                shared with others
-                              </p>
-                            </div>
-                            <div class="checkbox-container">
-                              <input
-                                class="checkbox"
-                                type="checkbox"
-                                id="shared"
-                                name="shared"
-                              />
+                            <div class="place-type-option">
+                              <div class="place-text">
+                                <h5>Shared room</h5>
+                                <p>
+                                  A sleeping space and common areas that may be
+                                  shared with others
+                                </p>
+                              </div>
+                              <div class="checkbox-container">
+                                <input
+                                  class="checkbox"
+                                  type="checkbox"
+                                  id="shared"
+                                  name="shared"
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -630,6 +652,7 @@
                         <div class="amenities" id="amenities">
                           <h3>Amenities</h3>
                           <h4>Essentials</h4>
+
                           <div>
                             <div class="amenities-text"><h5>Wifi</h5></div>
                             <div class="checkbox-container">
@@ -1992,18 +2015,20 @@
           </div>
         </div>
 
-        <div class="show-more">
-          <div class="button" tabindex="0"><a href="#">Show more</a></div>
+        <div class="show-more" id="show-more">
+          <div class="button" tabindex="0">
+            <a href="#show-more">Show more</a>
+          </div>
         </div>
       </main>
 
       <footer id="footer">
-        <div class="ancillary">
-          <a><h4>Support</h4></a>
-          <a><p>Help Centre</p></a>
-          <a><p>AirCover</p></a>
-          <a><p>Supporting people with disabilities</p></a>
-          <a><p>Cancellation options</p></a>
+        <div class="support">
+          <h4>Support</h4>
+          <a href="#footer"><p>Help Centre</p></a>
+          <a href="#footer"><p>AirCover</p></a>
+          <a href="#footer"><p>Supporting people with disabilities</p></a>
+          <a href="#footer"><p>Cancellation options</p></a>
         </div>
         <div class="ancillary">
           <div class="config">
@@ -2023,8 +2048,8 @@
       </footer>
 
       <aside>
-        <div class="map">
-          <a href="#">
+        <div class="map" id="map">
+          <a href="#map">
             <div class="map-item"><span>Map</span></div>
             <div class="map-item">
               <img src="./icons/map3.png" alt="icon" />
@@ -2032,9 +2057,9 @@
           </a>
         </div>
 
-        <div class="mini-nav">
+        <div class="mini-nav" id="mini-nav">
           <div class="nav-item" tabindex="0">
-            <a href="#">
+            <a href="#mini-nav">
               <img
                 class="nav-icon"
                 src="./icons/magnifying_glass5.png"
@@ -2043,14 +2068,14 @@
               <p>Explore</p>
             </a>
           </div>
-          <div class="nav-item" tabindex="0">
-            <a href="#">
+          <div class="nav-item" tabindex="0" id="nav-item">
+            <a href="#nav-item">
               <img class="nav-icon" src="./icons/heart4.png" alt="icon" />
               <p>Wishlists</p>
             </a>
           </div>
-          <div class="nav-item" tabindex="0">
-            <a href="#">
+          <div class="nav-item" tabindex="0" id="nav-item">
+            <a href="#nav-item">
               <img class="nav-icon" src="./icons/login2.png" alt="icon" />
               <p>Log in</p>
             </a>

@@ -286,6 +286,12 @@ header {
   border-radius: 2rem;
 }
 
+.filter a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
 .filter .icon {
   height: 55%;
   width: 55%;

@@ -23,3 +23,8 @@ div {
   margin: 0;
   /* margin: auto; */
 }
+
+body {
+  width: 100%;
+  margin: 0;
+}

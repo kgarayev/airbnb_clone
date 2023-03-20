@@ -6,9 +6,9 @@
 
 .filter-popup {
   margin: auto;
-  display: none;
-  /* transform: translateY(300%); */
-  /* display: flex; */
+  /* display: none; */
+  transform: translateY(300%);
+  display: flex;
   justify-content: center;
   z-index: 4;
   position: fixed;
@@ -28,20 +28,17 @@
   height: 100%;
 }
 
-.filter a:target .filter-popup {
-  display: flex;
-  /* transform: translateY(0%);
-  transition: transform 0.5s ease-out; */
+.filter-popup:target {
+  /* display: flex; */
+  transform: translateY(0%);
+  transition: transform 0.3s ease-out;
 }
 
-.filter-heading > a:target .filter-popup {
-  display: none;
-}
-
+/* 
 .filter-container:focus-within .filter-popup {
   transform: translateY(0%);
   transition: transform 0.5s ease-out;
-}
+} */
 
 .filter:focus-within aside {
   display: none;
@@ -201,6 +198,13 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* place type  */
 
+.place-grid {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+}
+
 .place-type h3 {
   font-size: 1.75rem;
   font-weight: 600;
@@ -313,6 +317,13 @@ input[type="radio"]:checked + label {
 
 /* property stuff  */
 
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-flow: row;
+  gap: 1rem;
+}
+
 .property-checkbox:not(:checked),
 .property-checkbox:checked {
   position: absolute;
@@ -322,6 +333,12 @@ input[type="radio"]:checked + label {
 
 .property-item label {
   /* border: 0.1rem solid rgb(112, 112, 112); */
+}
+
+.property-item:hover,
+.property-item:focus-within {
+  border: 0.1rem solid rgb(39, 39, 39);
+  border-radius: 1.5rem;
 }
 
 .property-item img {
@@ -351,13 +368,6 @@ input[type="radio"]:checked + label {
   border: 0.2rem solid rgb(0, 0, 0);
   cursor: pointer;
   background-color: #f8f8f8;
-}
-
-.property-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1rem;
 }
 
 .property-item {
