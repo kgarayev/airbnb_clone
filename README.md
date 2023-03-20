@@ -8,8 +8,8 @@ I have progressively learnt both languages and I went along. Hence, the code is 
 
 Nevertheless, this is my first custom-built webpage without the use of any frameworks such as Bootstrap. This project has allowed me to perfect my CSS skills and helped me gain confidence in using the language. Moreover, the speed of my use of these languages has improved significantly. 
 
+[Fake Airbnb](https://fake-airbnb-kg.netlify.app/)
 
-https://fake-airbnb-kg.netlify.app/
 
 Things that could have been done better:
 * Better use of classes (i.e. better naming, and hence a more compact, efficient css code)
