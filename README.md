@@ -12,7 +12,7 @@ Nevertheless, this is my first custom-built webpage without the use of any frame
 
 Check out the webpage by clicking in the link :link: below:
 
-:star: [Fake Airbnb](https://fake-airbnb-kg.netlify.app/) :star:
+### :star: [Fake Airbnb](https://fake-airbnb-kg.netlify.app/) :star:
 
 
 
