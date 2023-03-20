@@ -7,24 +7,25 @@ main {
   align-items: center;
 }
 
+/* grid container for listings  */
+
 .grid-container {
   margin: 1.5rem;
   margin-top: 14rem;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
   display: grid;
-  /* flex-wrap: wrap; */
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-auto-flow: row;
-  /* border: 0.01rem solid grey; */
   gap: 3rem;
   height: 100%;
   width: 95%;
   border-bottom: 0.01rem solid rgb(223, 223, 223);
 }
 
+/* individual listings  */
+
 .listing {
-  /* border: 0.01rem solid grey; */
   aspect-ratio: 4/5;
   width: 100%;
   border-radius: 1.25rem;
@@ -35,9 +36,6 @@ main {
   width: 100%;
   border-radius: 1.25rem;
   overflow: hidden;
-  /* aspect-ratio: 1/1; */
-  /* border: 0.01rem solid grey; */
-  /* padding-bottom: 100%; */
 }
 
 .picture {
@@ -50,9 +48,6 @@ main {
   aspect-ratio: 1/1;
   object-fit: cover;
   margin-bottom: 1.25rem;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
 }
 
 .listing-icon {
@@ -61,7 +56,6 @@ main {
   right: 1.5rem;
   width: 2.25rem;
   filter: opacity(65%);
-  /* background-color: white; */
 }
 
 .listing-icon:hover,
@@ -72,15 +66,9 @@ main {
 .listing-summary {
   display: flex;
   justify-content: space-between;
-  /* border: 0.01rem solid grey; */
-}
-
-.location {
-  /* border: 0.01rem solid grey; */
 }
 
 .rating {
-  /* border: 0.01rem solid grey; */
   display: flex;
   width: 25%;
   justify-content: end;
@@ -99,13 +87,10 @@ main {
 
 .show-more {
   width: 100%;
-  /* height: 12rem; */
-  /* border: 0.01rem solid grey; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
-  /* align-items: center; */
 }
 
 .show-more a {
@@ -114,9 +99,6 @@ main {
   height: 5rem;
   justify-content: center;
   align-items: center;
-  /* margin-top: 2rem; */
-  /* margin-bottom: 8rem; */
-  /* border: 0.01rem solid grey; */
 }
 
 .show-more .button {
@@ -132,18 +114,6 @@ main {
 .show-more .button:hover,
 .show-more .button:focus-within {
   background-color: rgb(243, 243, 243);
-}
-
-/* inspiration  */
-
-.inspiration {
-  margin-bottom: 5rem;
-}
-
-.inspiration-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-  grid-auto-flow: row;
 }
 
 /* scrollbar only */
@@ -165,6 +135,8 @@ main ::-webkit-scrollbar-thumb {
   background: black;
   -webkit-width: 1;
 }
+
+/* respnsive elements  */
 
 @media screen and (min-width: 375px) {
   .grid-container {

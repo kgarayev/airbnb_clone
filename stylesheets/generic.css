@@ -1,3 +1,5 @@
+/* generic styling to be applied to normalise across platforms  */
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* Mostly equivalates to 10px but allows users accessibility zoom settings to work*/

@@ -1,12 +1,7 @@
 /* filter popup  */
 
-* {
-  /* border: 0.01rem solid #a3a3a3; */
-}
-
 .filter-popup {
   margin: auto;
-  /* display: none; */
   transform: translateY(300%);
   display: flex;
   justify-content: center;
@@ -18,7 +13,6 @@
   width: 100%;
   border: 0.01rem solid #a3a3a3;
   background-color: rgba(85, 85, 85, 0.75);
-  /* filter: opacity(90%); */
 }
 
 .filter-popup a {
@@ -29,45 +23,35 @@
 }
 
 .filter-popup:target {
-  /* display: flex; */
   transform: translateY(0%);
   transition: transform 0.3s ease-out;
 }
-
-/* 
-.filter-container:focus-within .filter-popup {
-  transform: translateY(0%);
-  transition: transform 0.5s ease-out;
-} */
 
 .filter:focus-within aside {
   display: none;
 }
 
+/* filter menu  */
+
 .filter-menu {
   position: relative;
-  /* top: 20%; */
-  /* left: 50%; */
   max-width: 800px;
   margin-top: 2%;
   z-index: 3;
-  /* position: fixed; */
   top: 1.5rem;
   left: 0;
   height: 100%;
   width: 100%;
-  /* border: 0.01rem solid #a3a3a3; */
   background-color: white;
   border-radius: 1.5rem;
   overflow: auto;
   overflow-y: auto;
-  /* filter: opacity(100%); */
 }
 
 form > div {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
-  border-bottom: 0.01rem solid #dfdfdf;
+  border-bottom: 0.01rem solid rgb(223, 223, 223);
   width: 90%;
   margin: auto;
 }
@@ -79,11 +63,9 @@ form > div {
   text-align: center;
   width: 100%;
   padding-top: 0.75rem;
-  /* border-bottom: 0.01rem solid #dfdfdf; */
 }
 
 .filter-heading a {
-  /* border: 0.01rem solid #a3a3a3; */
   margin-top: 1.25rem;
   display: flex;
   align-items: center;
@@ -111,15 +93,12 @@ form > div {
 }
 
 .filter-heading .icon {
-  /* border: 0.01rem solid #a3a3a3; */
   height: 1.15rem;
   width: 1.15rem;
-  /* margin-top: 3.5rem; */
 }
 
 .filter-heading h4 {
   margin-top: 1rem;
-  /* margin-bottom: 1.5rem; */
 }
 
 /* price range section  */
@@ -141,7 +120,6 @@ form > div {
   justify-content: center;
   width: 90%;
   margin: auto;
-  /* border: 0.01rem solid #a3a3a3; */
 }
 
 .divider {
@@ -149,13 +127,11 @@ form > div {
   width: 4rem;
   text-align: center;
   padding-top: 1.5rem;
-  /* border: 0.01rem solid #a3a3a3; */
 }
 
 .price-box {
   min-width: 50px;
   width: 350px;
-  /* max-width: 500px; */
   height: 6.25rem;
   border: 0.01rem solid rgb(158, 158, 158);
   border-radius: 1rem;
@@ -177,7 +153,6 @@ form > div {
   display: flex;
   align-items: center;
   height: 2.25rem;
-  /* border: 0.01rem solid rgb(158, 158, 158); */
 }
 
 .input-area input {
@@ -193,7 +168,6 @@ input:focus {
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  /* margin: 0; */
 }
 
 /* place type  */
@@ -213,24 +187,20 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .place-type-option {
   display: flex;
-  /* border: 0.01rem solid #a3a3a3; */
   margin-top: 1.25rem;
   justify-content: space-between;
 }
 
 .place-text {
   width: 80%;
-  /* border: 0.01rem solid rgb(158, 158, 158); */
 }
 
 .checkbox-container {
-  /* border: 0.01rem solid rgb(158, 158, 158); */
   width: 15%;
   display: flex;
 }
 
 input[type="checkbox"] {
-  /* visibility: hidden; */
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
@@ -304,7 +274,7 @@ input[type="radio"] + label {
   width: 5.5rem;
   height: 4rem;
   border-radius: 2.5rem;
-  border: 0.1rem solid rgb(206, 206, 206);
+  border: 0.1rem solid rgb(223, 223, 223);
   outline: none;
   font-size: 1.5rem;
 }
@@ -331,10 +301,6 @@ input[type="radio"]:checked + label {
   display: hidden;
 }
 
-.property-item label {
-  /* border: 0.1rem solid rgb(112, 112, 112); */
-}
-
 .property-item:hover,
 .property-item:focus-within {
   border: 0.1rem solid rgb(39, 39, 39);
@@ -343,7 +309,6 @@ input[type="radio"]:checked + label {
 
 .property-item img {
   width: 3rem;
-  /* border: 0.1rem solid rgb(112, 112, 112); */
 }
 
 .property-checkbox + label {
@@ -358,7 +323,7 @@ input[type="radio"]:checked + label {
   width: 100%;
   height: 100%;
   border-radius: 1.5rem;
-  border: 0.1rem solid rgb(230, 230, 230);
+  border: 0.1rem solid rgb(223, 223, 223);
   outline: none;
   font-size: 1.5rem;
   font-weight: 600;
@@ -371,7 +336,6 @@ input[type="radio"]:checked + label {
 }
 
 .property-item {
-  /* border: 0.01rem solid #a3a3a3; */
   height: 11rem;
 }
 
@@ -438,27 +402,22 @@ input[type="radio"]:checked + label {
   width: 100%;
   height: 100%;
   margin-bottom: 2.5rem;
-  /* border: 0.01rem solid #a3a3a3; */
 }
 
 .switch-text {
-  /* border: 0.01rem solid #a3a3a3; */
   width: 80%;
 }
 
 .toggle-div {
-  /* border: 0.01rem solid #a3a3a3; */
   width: 20%;
 }
 
 .toggle {
   opacity: 0;
-  /* border: 0.01rem solid #a3a3a3; */
 }
 
 .toggle-switch {
   z-index: 4;
-  /* display: block; */
   position: absolute;
   top: 0.5rem;
   right: 0;
@@ -545,7 +504,6 @@ input[type="radio"]:checked + label {
 .top-tier div {
   display: flex;
   position: relative;
-  /* border: 0.1rem solid rgb(230, 230, 230); */
   justify-content: space-between;
   margin-bottom: 1rem;
 }
@@ -584,13 +542,11 @@ input[type="radio"]:checked + label {
   width: 100%;
   min-height: 7rem;
   max-height: 10rem;
-  /* padding: 1.25rem; */
   position: fixed;
   bottom: 0;
   background-color: white;
-  /* display: flex; */
   justify-content: space-between;
-  border-top: 0.01rem solid #dadada;
+  border-top: 0.01rem solid rgb(223, 223, 223);
   z-index: 5;
 }
 
@@ -599,27 +555,23 @@ input[type="radio"]:checked + label {
   justify-content: space-between;
   width: 90%;
   margin: auto;
-  /* border: 0.01rem solid #dadada; */
 }
 
 .filter-footer > div div {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border: 0.01rem solid #dadada; */
 }
 
 .more-box {
   min-width: 50px;
   width: 175px;
-  /* max-width: 500px; */
   min-height: 4.5rem;
   border: 0.01rem solid rgb(158, 158, 158);
   border-radius: 1rem;
   color: white;
   background-color: rgb(44, 44, 44);
   padding: 0.5rem;
-  /* padding-left: 1rem; */
   display: flex;
   justify-content: center;
 }
@@ -630,7 +582,6 @@ input[type="radio"]:checked + label {
 }
 
 .more-box a {
-  /* border: 0.01rem solid rgb(158, 158, 158); */
   height: 100%;
   width: 100%;
   margin: auto;
@@ -641,6 +592,8 @@ input[type="radio"]:checked + label {
   flex-direction: column;
   justify-content: center;
 }
+
+/* responsive elements  */
 
 @media screen and (min-width: 750px) {
   .filter-menu {

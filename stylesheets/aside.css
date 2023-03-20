@@ -6,10 +6,11 @@ aside {
   z-index: 2;
 }
 
+/* map icon  */
+
 .map {
   position: fixed;
   bottom: 7rem;
-  /* left: 50%; */
   display: flex;
   justify-content: center;
   justify-items: center;
@@ -33,7 +34,6 @@ aside {
 
 .map-item {
   height: 2rem;
-  /* border: 0.01rem solid #a3a3a3; */
   margin: 0.5rem;
   font-size: 1.25rem;
   font-weight: 500;
@@ -44,12 +44,13 @@ aside {
 .map img {
   width: 1.5rem;
   height: 1.5rem;
-  /* border: 0.01rem solid #a3a3a3; */
 }
 
 .map:hover {
   transform: scale(1.035);
 }
+
+/* mini navigation bar  */
 
 .mini-nav {
   position: fixed;
@@ -61,7 +62,6 @@ aside {
   height: 6rem;
   background-color: white;
   border-top: 0.001rem solid rgb(230, 230, 230);
-  /* border: 0.01rem solid #a3a3a3; */
   font-size: 1rem;
   font-weight: 500;
 }
@@ -70,7 +70,6 @@ aside {
   margin: 1.25rem;
   margin-right: 1.5rem;
   margin-left: 1.5rem;
-  /* border: 0.01rem solid #a3a3a3; */
   height: 75%;
   filter: grayscale(100%);
 }
@@ -85,22 +84,20 @@ aside {
   text-align: center;
   width: 3rem;
   height: 100%;
-  /* border: 0.01rem solid #a3a3a3; */
 }
 
 .nav-icon {
   width: 2.5rem;
   height: 2.35rem;
   margin: auto;
-
-  /* border: 0.01rem solid #a3a3a3; */
 }
 
 .mini-nav p {
   margin: auto;
   margin-top: 0.5rem;
-  /* border: 0.01rem solid #a3a3a3; */
 }
+
+/* responsive elements  */
 
 @media screen and (min-width: 750px) {
   .mini-nav {

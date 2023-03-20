@@ -1,6 +1,4 @@
-* {
-  /* border: 0.01rem solid grey; */
-}
+/* header  */
 
 header {
   position: fixed;
@@ -8,7 +6,7 @@ header {
   flex-direction: column;
   top: 0;
   left: 0;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   background-color: white;
   z-index: 1;
   margin-left: 0;
@@ -23,7 +21,6 @@ header {
 
 .sub-header > div {
   display: flex;
-  /* border: 0.01rem solid grey; */
 }
 
 .middle-container {
@@ -35,6 +32,8 @@ header {
   display: none;
   /* border: 0.01rem solid grey; */
 }
+
+/* end container stuff  */
 
 .end-container > div {
   display: none;
@@ -70,17 +69,7 @@ header {
   background-color: rgb(243, 243, 243);
 }
 
-.top-menu {
-  border: 0.01rem solid rgb(197, 197, 197);
-  width: 7.5rem;
-  height: 4rem;
-  border-radius: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  cursor: pointer;
-}
+/* top menu  */
 
 .top-profile {
   position: relative;
@@ -97,7 +86,6 @@ header {
   background-color: rgb(255, 255, 255);
   z-index: 10;
   border-radius: 1rem;
-  /* border: 0.01rem solid rgb(243, 243, 243); */
   box-shadow: 0.005rem 0.005rem 1rem 0.00001rem rgb(207, 207, 207);
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -139,11 +127,12 @@ header {
   width: 3rem;
 }
 
+/* airbnb name and logo  */
+
 .logo {
   height: 5.25rem;
   width: 5.25rem;
   display: none;
-  /* border: 0.01rem solid grey; */
   margin-left: 1.75rem;
   padding: 0.75rem;
 }
@@ -152,13 +141,13 @@ header {
   display: none;
   font-size: 1.15rem;
   color: #ff5a5f;
-  /* border: 0.01rem solid grey; */
   text-align: center;
 }
 
+/* top bar  */
+
 .top-bar {
   border: 0.01rem solid rgb(233, 233, 233);
-  /* background-color: orange; */
   display: flex;
   width: 92.5%;
   margin: auto;
@@ -170,17 +159,83 @@ header {
   margin-bottom: 0.75rem;
 }
 
+.search-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 3rem;
+}
+
+.search {
+  background-color: inherit;
+  height: 100%;
+  align-self: flex-start;
+  padding-left: 0.75rem;
+}
+
+.search .icon {
+  width: 100%;
+  height: 100%;
+  min-width: 1.75rem;
+  max-width: 1.75rem;
+}
+
+.top-bar-text {
+  margin: auto;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  flex-grow: 10;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.top-bar-text h4 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.top-bar-text p {
+  color: rgb(83, 83, 83);
+}
+
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.filter {
+  background-color: inherit;
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 0.01rem solid rgb(212, 212, 212);
+  border-radius: 2rem;
+}
+
+.filter a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.filter .icon {
+  height: 55%;
+  width: 55%;
+  margin: 0.75rem;
+}
+
+/* items that appear in larger screen sizes  */
+
 .desktop-options {
   display: none;
   width: 100%;
   padding: 0.25rem;
-  /* border: 0.01rem solid grey; */
 }
 
 .desktop-options .text,
 .desktop-options .last-text {
   padding: 0.5rem;
-  /* border: 0.01rem solid grey; */
   text-align: center;
   flex-grow: 10;
   border-right: 0.01rem solid rgb(233, 233, 233);
@@ -202,7 +257,6 @@ header {
 }
 
 .desktop-options .search {
-  /* border: 0.01rem solid grey; */
   border-radius: 10rem;
   width: 3rem;
   height: 3rem;
@@ -212,123 +266,9 @@ header {
 }
 
 .desktop-options .search .icon {
-  /* border: 0.01rem solid grey; */
   width: 1.25rem;
   height: 1.25rem;
   filter: invert(100%);
-}
-
-.search-container {
-  /* flex-grow: 1; */
-  /* border: 0.01rem solid grey; */
-  display: flex;
-  justify-content: flex-start;
-  /* flex-grow: 1; */
-  width: 3rem;
-  /* margin-bottom: 0.5; */
-}
-
-.search {
-  background-color: inherit;
-  /* width: 100%; */
-  height: 100%;
-  align-self: flex-start;
-  padding-left: 0.75rem;
-  /* border: 0.01rem solid grey; */
-}
-
-.search .icon {
-  width: 100%;
-  height: 100%;
-  min-width: 1.75rem;
-  max-width: 1.75rem;
-  /* margin: auto; */
-  /* border: 0.01rem solid grey; */
-}
-
-.top-bar-text {
-  margin: auto;
-  padding: 0;
-  margin: 0;
-  /* border: 0.01rem solid grey; */
-  line-height: 1.5;
-  flex-grow: 10;
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
-.top-bar-text h4 {
-  font-size: 1.35rem;
-  font-weight: 600;
-}
-
-.top-bar-text p {
-  color: rgb(83, 83, 83);
-}
-
-.filter-container {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  cursor: pointer;
-  /* border: 0.01rem solid grey; */
-  /* background-color: aqua; */
-}
-
-.filter {
-  background-color: inherit;
-  height: 3.5rem;
-  width: 3.5rem;
-  /* margin: auto; */
-  /* display: flex;
-    justify-content: center; */
-  border: 0.01rem solid rgb(212, 212, 212);
-  border-radius: 2rem;
-}
-
-.filter a {
-  display: flex;
-  height: 100%;
-  width: 100%;
-}
-
-.filter .icon {
-  height: 55%;
-  width: 55%;
-  margin: 0.75rem;
-  /* margin: auto; */
-  /* border: 0.01rem solid grey; */
-}
-
-/* scroll bar stuff  */
-
-.scroll-bar {
-  display: flex;
-  position: relative;
-  gap: 1.5rem;
-  height: 5.75rem;
-  width: 92.5%;
-  margin: auto;
-  margin-top: 0.75rem;
-  overflow: auto;
-  white-space: nowrap;
-  border-bottom: 0.001rem solid rgb(225, 225, 225);
-  /* border: 0.01rem solid grey; */
-}
-
-.scroll-bar > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* min-width: 6rem; */
-  padding: 0.5rem;
-  height: 90%;
-  /* border: 0.01rem solid grey; */
-  /* margin: 0.25rem; */
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-align: center;
-  filter: opacity(60%);
 }
 
 .desktop-filter {
@@ -346,7 +286,6 @@ header {
 
 .blur {
   display: none;
-  /* border: 0.01rem solid grey; */
   width: 3rem;
   height: 5rem;
   position: fixed;
@@ -363,7 +302,6 @@ header {
   gap: 1rem;
   width: 100%;
   height: 100%;
-  /* border: 0.01rem solid grey; */
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 1rem;
@@ -375,19 +313,43 @@ header {
   height: 2rem;
 }
 
+/* scroll bar stuff  */
+
+.scroll-bar {
+  display: flex;
+  position: relative;
+  gap: 1.5rem;
+  height: 5.75rem;
+  width: 92.5%;
+  margin: auto;
+  margin-top: 0.75rem;
+  overflow: auto;
+  white-space: nowrap;
+  border-bottom: 0.001rem solid rgb(225, 225, 225);
+}
+
+.scroll-bar > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  height: 90%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  filter: opacity(60%);
+}
+
 .scroll-bar > div .icon {
   width: 2rem;
   height: 2rem;
   margin: auto;
   margin-bottom: 0.5rem;
-
-  /* border: 0.01rem solid grey; */
 }
 
 .scroll-bar > div:hover,
 .scroll-bar > div:focus-within {
   filter: opacity(100%);
-  /* color: black; */
 }
 
 .line {
@@ -416,6 +378,8 @@ header ::-webkit-scrollbar-thumb {
   -webkit-width: 1;
 }
 
+/* responsive elements  */
+
 @media screen and (min-width: 750px) {
   header {
     margin-top: 0;
@@ -432,7 +396,6 @@ header ::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    /* border: 0.01rem solid rgb(212, 212, 212); */
     border-bottom: 0.01rem solid rgb(212, 212, 212);
     height: 8rem;
     margin-top: 0;
@@ -499,7 +462,6 @@ header ::-webkit-scrollbar-thumb {
   .end-container {
     display: flex;
     justify-content: flex-end;
-    /* border: 0.01rem solid grey; */
     align-items: center;
     gap: 0.75rem;
     padding-right: 1.75rem;
@@ -512,7 +474,6 @@ header ::-webkit-scrollbar-thumb {
   }
 
   .end-container .text {
-    /* border: 0.01rem solid grey; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -539,7 +500,6 @@ header ::-webkit-scrollbar-thumb {
   }
 
   .middle-container {
-    /* border: 0.01rem solid rgb(212, 212, 212); */
     justify-content: center;
   }
 }
