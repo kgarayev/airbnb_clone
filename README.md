@@ -1,4 +1,4 @@
-# Kanan's Airbnb Clone
+# Kanan's Airbnb Clone :house_with_garden:
 ## A clone of Airbnb.co.uk webpage using HTML and CSS only
 ### Created by Kanan Garayev
 
@@ -10,10 +10,13 @@ I have progressively learnt both languages while I was working on this project. 
 
 Nevertheless, this is my first custom-built webpage without the use of any frameworks such as Bootstrap. This project has allowed me to perfect my CSS skills and helped me gain confidence in using the language. Moreover, the speed of my use of these languages has improved significantly. 
 
-Check out the webpage by clicking in the link below:
-[Fake Airbnb](https://fake-airbnb-kg.netlify.app/)
+Check out the webpage by clicking in the link :link: below:
 
-Main features:
+:star: [Fake Airbnb](https://fake-airbnb-kg.netlify.app/) :star:
+
+
+
+#### :sparkles: Main features:
 
 * Use of CSS Flex
 * Use of CSS Grid
@@ -22,7 +25,7 @@ Main features:
 * Use of basic CSS animation
 
 
-Opportunities for improvement:
+#### :zap: Opportunities for improvement:
 
 * Better use of classes (i.e. better naming, and hence a more compact, efficient css code)
 * Better use of inheritance selectors for a more compact code
