@@ -6,9 +6,9 @@
 
 .filter-popup {
   margin: auto;
-  /* display: none; */
-  transform: translateY(100%);
-  display: flex;
+  display: none;
+  /* transform: translateY(300%); */
+  /* display: flex; */
   justify-content: center;
   z-index: 4;
   position: fixed;
@@ -24,6 +24,18 @@
 .filter-popup a {
   text-decoration: underline;
   font-weight: 500;
+  width: 100%;
+  height: 100%;
+}
+
+.filter a:target .filter-popup {
+  display: flex;
+  /* transform: translateY(0%);
+  transition: transform 0.5s ease-out; */
+}
+
+.filter-heading > a:target .filter-popup {
+  display: none;
 }
 
 .filter-container:focus-within .filter-popup {
@@ -268,7 +280,7 @@ input[type="checkbox"]:checked::before {
 
 .space .scroll-bar {
   display: flex;
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-y: hidden; /* jHide vertical scrollbar */
 }
 
 input[type="radio"]:not(:checked),

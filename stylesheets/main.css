@@ -9,6 +9,7 @@ main {
 
 .grid-container {
   margin: 1.5rem;
+  margin-top: 14rem;
   display: grid;
   /* flex-wrap: wrap; */
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -166,6 +167,7 @@ main ::-webkit-scrollbar-thumb {
 @media screen and (min-width: 750px) {
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    margin-top: 20rem;
   }
 }
 
