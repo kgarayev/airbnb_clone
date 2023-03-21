@@ -11,15 +11,15 @@ main {
 
 .grid-container {
   margin: 1.5rem;
-  margin-top: 14rem;
+  margin-top: 16rem;
   margin-bottom: 3rem;
   padding-bottom: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
   grid-auto-flow: row;
-  gap: 3rem;
+  gap: 2.25rem;
   height: 100%;
-  width: 95%;
+  width: 90%;
   border-bottom: 0.01rem solid rgb(223, 223, 223);
 }
 
@@ -68,10 +68,16 @@ main {
   justify-content: space-between;
 }
 
+.listing-summary h5 {
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
 .rating {
   display: flex;
   width: 25%;
   justify-content: end;
+  align-items: center;
 }
 
 .star-icon {
@@ -81,6 +87,20 @@ main {
 
 .rating span {
   padding-left: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.listing-details {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgb(87, 87, 87);
+}
+
+.listing-details p:nth-child(3) {
+  font-weight: 600;
+  text-decoration: underline;
+  color: initial;
+  margin-top: 0.5rem;
 }
 
 /* show more  */
@@ -140,20 +160,22 @@ main ::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 375px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   }
 }
 
 @media screen and (min-width: 750px) {
   .grid-container {
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-    margin-top: 20rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    margin-top: 22rem;
+    width: 92.5%;
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1125px) {
   .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    width: 95%;
   }
 }
 

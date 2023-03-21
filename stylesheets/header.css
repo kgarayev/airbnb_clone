@@ -73,6 +73,13 @@ header {
 
 .top-profile {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 4rem;
+  border: 0.01rem solid rgb(228, 228, 228);
+  border-radius: 3rem;
 }
 
 .popup-menu {
@@ -113,9 +120,9 @@ header {
 
 .top-profile a {
   display: flex;
-  justify-content: space-between;
-  gap: 0.75rem;
-  padding: 0;
+  justify-content: space-around;
+  gap: 1.25rem;
+  padding-left: 0.5rem;
   filter: grayscale(100%);
 }
 
@@ -274,9 +281,9 @@ header {
 .desktop-filter {
   position: fixed;
   display: none;
-  right: 2rem;
+  right: 3rem;
   top: 10.5rem;
-  z-index: 2;
+  z-index: 3;
   background-color: white;
   width: 10rem;
   height: 5rem;
@@ -289,7 +296,18 @@ header {
   width: 3rem;
   height: 5rem;
   position: fixed;
-  right: 11rem;
+  right: 12.5rem;
+  top: 10.5rem;
+  z-index: 2;
+  background-color: white;
+}
+
+.blur-2 {
+  display: none;
+  width: 3rem;
+  height: 5rem;
+  position: fixed;
+  right: 2rem;
   top: 10.5rem;
   z-index: 2;
   background-color: white;
@@ -390,6 +408,8 @@ header ::-webkit-scrollbar-thumb {
   .scroll-bar {
     border-bottom: none;
     width: 95%;
+    height: 10rem;
+    align-items: center;
   }
 
   .sub-header {
@@ -399,12 +419,10 @@ header ::-webkit-scrollbar-thumb {
     border-bottom: 0.01rem solid rgb(212, 212, 212);
     height: 8rem;
     margin-top: 0;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
     width: 100%;
-  }
-
-  .scroll-bar {
-    height: 10rem;
-    align-items: center;
+    margin: auto;
   }
 
   .logo {
@@ -412,13 +430,14 @@ header ::-webkit-scrollbar-thumb {
   }
 
   .top-bar {
-    width: 350px;
+    min-width: 325px;
+    max-width: 375px;
     margin: 0;
     margin-left: 1.75rem;
   }
 
   .top-bar:hover,
-  .top-menu:hover {
+  .top-profile:hover {
     box-shadow: -0.1rem 0.1rem 1rem 0.1rem rgb(235, 235, 235);
   }
 
@@ -440,7 +459,7 @@ header ::-webkit-scrollbar-thumb {
     position: fixed;
     display: flex;
     justify-content: end;
-    right: 2rem;
+    right: 3rem;
     top: 10.5rem;
     z-index: 2;
     background-color: white;
@@ -456,6 +475,10 @@ header ::-webkit-scrollbar-thumb {
   }
 
   .blur {
+    display: initial;
+  }
+
+  .blur-2 {
     display: initial;
   }
 
@@ -485,6 +508,12 @@ header ::-webkit-scrollbar-thumb {
 }
 
 @media screen and (min-width: 950px) {
+  .top-bar {
+    width: 400px;
+    margin: 0;
+    margin-left: 1.75rem;
+  }
+
   .sub-header {
     justify-content: center;
   }
