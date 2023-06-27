@@ -2,6 +2,11 @@
 ## A clone of Airbnb.co.uk webpage using HTML and CSS only
 ### Created by Kanan Garayev
 
+## :computer: Tech Used
+
+- Web Development: HTML, CSS, SCSS
+- Version Control: Git
+
 This is my project where I have replicated Airbnb webpage. I tried to make it look and feel like the original as much as practical. Given the time constraints, it is not perfect. Nevertheless, it looks impressive.
 
 I have only used HTML and CSS to create this page, no programming has been used here. I have used this project to practice and showcase only my HTML and CSS knowledge and skills. 
